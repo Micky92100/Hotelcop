@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -19,40 +19,39 @@
 <body id="haut">
 <!--Nav bar-->
 <header id="header">
-    <div class="container-fluid" style="background-color: #01344c;">
+    <div class="container-fluid" id="index-nav">
         <div class="row">
             <div class="col-12 col-md-2 logo">
-                <img src="img/logo.png" alt="Logo de l'hotel"></img>
+                <img src="img/shared/logo.png" alt="Logo de l'hotel">
 
             </div>
             <div class="col-12 col-md-9 titre">
-                <h2 class="hotel"> HôtelCOP</h2>
-                <i class="fas fa-star etoile" style="color:#d4a22f"></i>
-                <i class="fas fa-star etoile" style="color:#d4a22f"></i>
-                <i class="fas fa-star etoile" style="color:#d4a22f"></i>
-                <i class="fas fa-star etoile" style="color:#d4a22f"></i>
-                <i class="fas fa-star etoile" style="color:#d4a22f"></i>
+                <h2 class="hotel">HôtelCOP</h2>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
             </div>
             <div class="col-12 col-md-1 langage">
 
                 <div class="col-12 zone1 ">
-                    <a target="_blank" rel="external nofollow" href="#"><img
-                            src="img/france-flag-icon-16.png"></img></a>
-                    <a target="_blank" rel="external nofollow" href="#"><img
-                            src="img/united-kingdom-flag-icon-16.png"></img></a>
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="img/shared/france-flag-icon-16.png"></a>
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="img/shared/united-kingdom-flag-icon-16.png"></a>
                 </div>
-<!--                <div class="col-12 zone2">-->
-<!--                    <a target="_blank" rel="external nofollow" href="#"><img-->
-<!--                      TODO a changer -->
-<!--                            src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png"></img></a>-->
-<!--                </div>-->
+                <div class="col-12 zone2">
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png"></a>
+                </div>
 
 
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #01344c;">
+    <div class="container-fluid" id="index-container">
 
         <div class="row">
 
@@ -60,9 +59,10 @@
 
 
                 <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler" bac type="button" data-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
+                        <!--                        TODO : hamburger!-->
                         <span class="navbar-toggler-icon">Menu</span>
                     </button>
 
@@ -85,8 +85,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown menu">
-                                <a class="nav-link dropdown-toggle menu" href="#" id="navbardrop"
-                                   data-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
                                     Chambres & Suites
                                 </a>
                                 <div class="dropdown-menu">
@@ -97,8 +96,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle menu" href="#" id="navbardrop"
-                                   data-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
                                     Spa
                                 </a>
                                 <div class="dropdown-menu">
@@ -211,7 +209,7 @@
         <div class="col-12 my-3 mt-2">
             <h1>Le meilleur hôtel de luxe de Paris</h1>
             <div class="row">
-                <div class="col-12 col-md-8 mb-6 mt-2" id="presentation">
+                <div class="col-12 col-md-8 mb-6 mt-2 presentation">
                     <p>Le mot du directeur</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ipsum enim incidunt optio minima
                         qui nobis dolorem nostrum, repudiandae quisquam, sint nulla quia temporibus vel eaque. Modi
@@ -227,7 +225,7 @@
                         doloribus magnam ipsum perspiciatis cum, eum voluptatum!
                     </p>
                 </div>
-                <div class="col-12  col-md-4 mb-6 mt-2" id="main">
+                <div class="col-12  col-md-4 mb-6 mt-2 main">
                     <img src="https://www.journaldespalaces.com/images/le_5_codet_julien_douieb.png" width="50%">
                 </div>
             </div>
@@ -235,34 +233,34 @@
     </div>
 
     <div class="row my-5">
-        <div class="col-md-12 col-lg-6 mt-1" id="main">
+        <div class="col-md-12 col-lg-6 mt-1 main">
             <div class="col">
                 <img src="http://www.hotelparister.com/media/thumbs/hotel-parister-2019-room_540.jpg">
             </div>
             <div class="col">
-                <h2 style="text-align: center;" class="my-2">Chambres et Suites</h2>
+                <h2 class="my-2">Chambres et Suites</h2>
                 <p>De la chambre raffinée à ses suites d’exception, le Parister a construit un confort unique. La
                     qualité et l’élégance de chaque détail rehaussent le cachet intemporel de son style parisien.
                 </p>
             </div>
             <div class="col">
-                <a href="Chambres.html" target="_blank" class="btn bouton2">
+                <a href="chambres.html" target="_blank" class="btn bouton2">
                     En savoir plus
                 </a>
             </div>
         </div>
-        <div class="col-md-12 col-lg-6 mt-1" id="main">
+        <div class="col-md-12 col-lg-6 mt-1 main">
             <div class="col">
                 <img src="http://www.hotelparister.com/media/thumbs/croque-monsieur_540.jpg">
             </div>
             <div class="col">
-                <h2 style="text-align: center;" class="my-2">Restaurant & Bar à cocktails</h2>
+                <h2 class="my-2">Restaurant & Bar à cocktails</h2>
                 <p>De la chambre raffinée à ses suites d’exception, le Parister a construit un confort unique. La
                     qualité et l’élégance de chaque détail rehaussent le cachet intemporel de son style parisien.
                 </p>
             </div>
             <div class="col">
-                <a href="Restaurants.html" target="_blank" class="btn bouton2">
+                <a href="restaurant.html" target="_blank" class="btn bouton2">
                     En savoir plus
                 </a>
             </div>
@@ -275,29 +273,29 @@
                 <img src="http://www.hotelparister.com/media/thumbs/hotel-parister-2019-sport_540.jpg">
             </div>
             <div class="col">
-                <h2 style="text-align: center;" class="my-2">Chambres et Suites</h2>
+                <h2 class="my-2">Chambres et Suites</h2>
                 <p>De la chambre raffinée à ses suites d’exception, le Parister a construit un confort unique. La
                     qualité et l’élégance de chaque détail rehaussent le cachet intemporel de son style parisien.
                 </p>
             </div>
             <div class="col">
-                <a href="Spa.html" target="_blank" class="btn bouton2">
+                <a href="spa.html" target="_blank" class="btn bouton2">
                     En savoir plus
                 </a>
             </div>
         </div>
-        <div class="col-md-12 col-lg-6 mt-1" id="main">
+        <div class="col-md-12 col-lg-6 mt-1 main">
             <div class="col">
                 <img src="http://www.hotelparister.com/media/thumbs/hotel-parister-2019-room_540.jpg">
             </div>
             <div class="col">
-                <h2 style="text-align: center;" class="my-2">Restaurants & Bars</h2>
+                <h2 class="my-2">Restaurants & Bars</h2>
                 <p>De la chambre raffinée à ses suites d’exception, le Parister a construit un confort unique. La
                     qualité et l’élégance de chaque détail rehaussent le cachet intemporel de son style parisien.
                 </p>
             </div>
             <div class="col">
-                <a href="Chambres.html" target="_blank" class="btn bouton2">
+                <a href="chambres.html" target="_blank" class="btn bouton2">
                     En savoir plus
                 </a>
             </div>
@@ -307,9 +305,9 @@
     <div class="row">
         <div class="col-0 col-md-2"></div>
         <div class="col-12 col-md-8 my-3 mt-2">
-            <h2 style="text-align: center;" class="my-2">Le quartier</h2>
+            <h2 class="my-2">Le quartier</h2>
             <div class="row">
-                <div class="col-12 mb-6 mt-2" id="presentation">
+                <div class="col-12 mb-6 mt-2 presentation">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ipsum enim incidunt optio minima
                         qui nobis dolorem nostrum, repudiandae quisquam, sint nulla quia temporibus vel eaque. Modi
                         inventore nemo ad!
@@ -324,7 +322,7 @@
                         doloribus magnam ipsum perspiciatis cum, eum voluptatum!
                     </p>
                 </div>
-                <div class="col-12 col-md-12  mb-6 mt-2 align-items-center" id="main">
+                <div class="col-12 col-md-12  mb-6 mt-2 align-items-center main">
                     <img src="https://img.aws.la-croix.com/2017/02/06/1300822755/personnes-place-Droits-Homme-Trocadero-Tour-Eiffel-21-janvier-2017-Paris_0_730_428.jpg"
                          width="100%">
                 </div>
@@ -368,17 +366,17 @@
 
                 <div class="col-md-5">
                     <ul>
-                        <li><a href="#"> Nos chambres</a></li>
-                        <li><a href="#"> Nos Psa</a></li>
-                        <li><a href="#"> Nos restaurants</a></li>
-                        <li><a href="#"> Accès</a></li>
+                        <li><a href="#">Nos chambres</a></li>
+                        <li><a href="#">Nos Psa</a></li>
+                        <li><a href="#">Nos restaurants</a></li>
+                        <li><a href="#">Accès</a></li>
                     </ul>
                 </div>
                 <div class="col-md-5">
                     <ul class="list">
-                        <li><a href="#"> Qui sommes-nous?</a></li>
-                        <li><a href="#"> Mentions légales</a></li>
-                        <li><a href="#"> Plan du site</a></li>
+                        <li><a href="#">Qui sommes-nous?</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Plan du site</a></li>
                     </ul>
                 </div>
             </div>
@@ -386,16 +384,20 @@
         <div class="col-12 col-md-3 ">
             <h4>Nous suivre</h4>
             <ul>
-                <li><a target="_blank" rel="external nofollow" href="#"><i
-                        class="fab fa-facebook-square" title="Facebook"></i> Facebook</a></li>
-                <li><a target="_blank" href="#" rel="external nofollow"><i
-                        class="fab fa-twitter-square" title="Twitter"></i> Twitter</a></li>
-                <li><a target="_blank" rel="external nofollow" href="#"><i
-                        class="fab fa-linkedin" title="Linkedin"></i> Linkedin</a></li>
-                <li><a target="_blank" rel="external nofollow" href="#"><i
-                        class="fab fa-google-plus-square" title="Google+"> </i> Google+</a></li>
-                <li><a href="#"><i class="fas fa-envelope-square"
-                                   title="Envoyer par mail"></i> Nous écrire</a></li>
+                <li><a target="_blank" rel="external nofollow" href="#">
+                    <i class="fab fa-facebook-square" title="Facebook"></i>Facebook
+                </a></li>
+                <li><a target="_blank" href="#" rel="external nofollow">
+                    <i class="fab fa-twitter-square" title="Twitter"></i>Twitter
+                </a></li>
+                <li><a target="_blank" rel="external nofollow" href="#">
+                    <i class="fab fa-linkedin" title="Linkedin"></i>Linkedin
+                </a></li>
+                <li><a target="_blank" rel="external nofollow" href="#">
+                    <i class="fab fa-google-plus-square" title="Google+"></i>Google+
+                </a></li>
+                <li><a href="#"><i class="fas fa-envelope-square" title="Envoyer par mail"></i>Nous écrire
+                </a></li>
             </ul>
         </div>
         <div class="col-12 col-md-5 ">
@@ -403,7 +405,7 @@
             <form>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                        placeholder="Saisisez votre mail" required>
-                <small id="emailHelp" class="form-text text-muted">Rejoigner nous pour suivre notre actualité</small>
+                <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>
                 <button type="submit" class="btn btn-primary">Enregistrer</button>
             </form>
         </div>
@@ -423,45 +425,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script>
-
-
-    function imprimer_page() {
-        window.print();
-    };
-
-    var positionElementInPage = $('#header').offset().top;
-    $(window).scroll(
-        function () {
-            if ($(window).scrollTop() > positionElementInPage) {
-
-                $('#header').addClass("fixed");
-            } else {
-
-                $('#header').removeClass("fixed");
-            }
-        }
-    );
-
-</script>
-<script>
-    $(function () {
-        $('form').submit(function (e) {
-            e.preventDefault()
-            var $form = $(this)
-            $.post($form.attr('action'), $form.serialize())
-                .done(function (data) {
-                    $('#html').html(data)
-                    $('#formulaire').modal('hide')
-                })
-                .fail(function () {
-                    alert('ça ne marche pas...')
-                })
-        })
-        $('.modal').on('shown.bs.modal', function () {
-            $('input:first').focus()
-        })
-    })
-</script>
+<script src="script.js"></script>
 </body>
 </html>

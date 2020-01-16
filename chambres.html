@@ -18,7 +18,7 @@
 
 <body id="haut">
 <!--Nav bar-->
-<div class="container-fluid" style="background-color: #01344c;">
+<div class="container-fluid" id="chambre-container">
     <!--C'est la nav bar-->
     <div class="row">
         <div class="col-12 col-md-9">
@@ -36,46 +36,46 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#haut" style="color:#d4a22f" ;>Qui sommes-nous ?</a>
+                            <a class="nav-link" href="#haut" id="who">Qui sommes-nous ?</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
-                            <div class="dropdown-menu" style="color:#d4a22f">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#presentation" style="color:#d4a22f">Chambres</a>
+                            <a class="nav-link" href="#presentation">Chambres</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#avis" style="color:#d4a22f">Restaurant</a>
+                            <a class="nav-link" href="#avis">Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact" style="color:#d4a22f">Spa</a>
+                            <a class="nav-link" href="#contact">Spa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#haut" style="color:#d4a22f">Evenements</a>
+                            <a class="nav-link" href="#haut">Evenements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#haut" style="color:#d4a22f">Avis</a>
+                            <a class="nav-link" href="#haut">Avis</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#haut" style="color:#d4a22f">Accés et contact</a>
+                            <a class="nav-link" href="#haut">Accés et contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
         <div class="col-12 col-md-1 langage">
-            <a class=btn btn-primary dropdown-toggle data-toggle=dropdown href=# style="color:#d4a22f">Sélectionnez
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Sélectionnez
                 une
                 langue</a>
             <ul class=dropdown-menu>
-                <li><a href=# style="color:#d4a22f">Français</a></li>
-                <li><a href=# style="color:#d4a22f">Anglais</a></li>
+                <li><a href=# class="lang-choice">Français</a></li>
+                <li><a href=# class="lang-choice">Anglais</a></li>
             </ul>
         </div>
 
@@ -116,24 +116,24 @@
             <section class="container-fluid">
                 <div class="row">
                     <div class="col-8">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="images/classique.jpg"
+                                    <img class="d-block w-100" src="img/chambres/classique.jpg"
                                          alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/classique1.jpg"
+                                    <img class="d-block w-100" src="img/chambres/classique1.jpg"
                                          alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/classique2.jpg"
+                                    <img class="d-block w-100" src="img/chambres/classique2.jpg"
                                          alt="Third slide">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h2 style="text-align: right;" class="my-2">Chambres classique</h2>
+                    <h2 class="my-2">Chambres classique</h2>
                     <p>Le style contemporain s'associe au luxe dans cette chambre Pavillon classique
                         avec très grand lit, située dans le bâtiment Pavillon. Admirez la vue
                         panoramique sur les jardins du Palace depuis les grandes fenêtres. Affichant un
@@ -141,7 +141,7 @@
                         chambre est également équipée d'un téléviseur haute définition et de l'accès
                         Wi-Fi (payant).
                     </p>
-                    <a href="Chambres.html" target="_blank" class="btn">
+                    <a href="chambres.html" target="_blank" class="btn">
                         Réserver
                     </a>
                 </div>
@@ -151,21 +151,21 @@
         <section class="container-fluid">
             <div class="row"></div>
             <div class="col-8">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/confort.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/chambres/confort.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/confort2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/chambres/confort1.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/confort1.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/chambres/confort.jpg" alt="Third slide">
                         </div>
                     </div>
                 </div>
             </div>
-            <h2 style="text-align: right;" class="my-2">Chambres confort</h2>
+            <h2 class="my-2">Chambres confort</h2>
             <p>Le style contemporain s'associe au luxe dans cette chambre Pavillon classique
                 avec très grand lit, située dans le bâtiment Pavillon. Admirez la vue
                 panoramique sur les jardins du Palace depuis les grandes fenêtres. Affichant un
@@ -182,22 +182,21 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-8">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <!--                                        TODO a changer -->
-<!--                        <img class="d-block w-100" src="images/deluxe.jpg" alt="First slide">-->
+                        <img class="d-block w-100" src="img/chambres/deluxe2.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/deluxe1.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="img/chambres/deluxe3.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/deluxe4.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="img/chambres/deluxe4.jpg" alt="Third slide">
                     </div>
                 </div>
             </div>
         </div>
-        <h2 style="text-align: right;" class="my-2">Chambre Deluxe</h2>
+        <h2 class="my-2">Chambre Deluxe</h2>
         <p>Le style contemporain s'associe au luxe dans cette chambre Pavillon classique
             avec très grand lit, située dans le bâtiment Pavillon. Admirez la vue
             panoramique sur les jardins du Palace depuis les grandes fenêtres. Affichant un
@@ -205,33 +204,32 @@
             chambre est également équipée d'un téléviseur haute définition et de l'accès
             Wi-Fi (payant).
         </p>
-        <a href="Chambres.html" target="_blank" class="btn">
+        <a href="chambres.html" target="_blank" class="btn">
             Réserver
         </a>
     </div>
 </section>
-
 <section class="container-fluid">
     <div class="row">
         <div class="col-8">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/suite1.jpg"
+                        <img class="d-block w-100" src="img/chambres/suite1.jpg"
                              alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/suite3.jpg"
+                        <img class="d-block w-100" src="img/chambres/suite3.jpg"
                              alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/suite.jpg"
+                        <img class="d-block w-100" src="img/chambres/suite.jpg"
                              alt="Third slide">
                     </div>
                 </div>
             </div>
         </div>
-        <h2 style="text-align: right;" class="my-2">Suite royale</h2>
+        <h2 class="my-2">Suite royale</h2>
         <p>Le style contemporain s'associe au luxe dans cette chambre Pavillon classique
             avec très grand lit, située dans le bâtiment Pavillon. Admirez la vue
             panoramique sur les jardins du Palace depuis les grandes fenêtres. Affichant un
@@ -239,7 +237,7 @@
             chambre est également équipée d'un téléviseur haute définition et de l'accès
             Wi-Fi (payant).
         </p>
-        <a href="Chambres.html" target="_blank" class="btn">
+        <a href="chambres.html" target="_blank" class="btn">
             Réserver
         </a>
     </div>

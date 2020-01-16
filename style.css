@@ -153,9 +153,9 @@ margin: 0 auto;}
 text-align: center;}
 
 
-#presentation p {padding-top:25px}
-#main {border: 1px black solid;} 
-#main img {
+.presentation p {padding-top:25px}
+.main {border: 1px black solid;}
+.main img {
     width: 100%;
  }
 
@@ -170,7 +170,31 @@ text-align: center;}
     transform: translate(0px,50px);
 }
 
+/*Index*/
 
+#index-container, #index-nav {
+    background-color: #01344c;
+}
+
+.etoile {
+    color:#d4a22f
+}
+
+h2 {
+    text-align: center;
+}
+ /*Chambres*/
+
+#chambre-container {
+    background-color: #01344c;
+}
+
+#who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
+    color:#d4a22f;
+}
+.my-2 {
+    text-align: right;
+}
 /**  FOOTER **/ 
  /* footer text  */
  footer {background-color: #01344c;
