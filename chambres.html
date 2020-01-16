@@ -10,91 +10,127 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Parisienne&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/téléchargement.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<!--    TODO what's that?-->
+<!--    <link rel="shortcut icon" href="img/shared/telechargement.jpg">-->
     <title>Chambre Hôtel</title>
 </head>
 
 <body id="haut">
 <!--Nav bar-->
-<div class="container-fluid" id="chambre-container">
-    <!--C'est la nav bar-->
-    <div class="row">
-        <div class="col-12 col-md-9">
-            <nav id="Nav" class="navbar navbar-light">
-                <a class="navbar-brand" href="#haut">
-                    <p class="hotel">Type de chambres </p>
-                    <span class="etoile">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span>Menu</span><span class="navbar-toggler-icon">
-                </button>
+<header id="header">
+    <div class="container-fluid" id="chambres-nav">
+        <div class="row">
+            <div class="col-12 col-md-2 logo">
+                <img src="img/shared/logo.png" alt="Logo de l'hotel">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#haut" id="who">Qui sommes-nous ?</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                               aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#presentation">Chambres</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#avis">Restaurant</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Spa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#haut">Evenements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#haut">Avis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#haut">Accés et contact</a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="col-12 col-md-9 titre">
+                <h2 class="hotel">HôtelCOP</h2>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+            </div>
+            <div class="col-12 col-md-1 langage">
+
+                <div class="col-12 zone1 ">
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="img/shared/france-flag-icon-16.png"></a>
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="img/shared/united-kingdom-flag-icon-16.png"></a>
                 </div>
-            </nav>
-        </div>
-        <div class="col-12 col-md-1 langage">
-            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Sélectionnez
-                une
-                langue</a>
-            <ul class=dropdown-menu>
-                <li><a href=# class="lang-choice">Français</a></li>
-                <li><a href=# class="lang-choice">Anglais</a></li>
-            </ul>
-        </div>
+                <div class="col-12 zone2">
+                    <a target="_blank" rel="external nofollow" href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png"></a>
+                </div>
 
 
-        <div class="col-12 col-md-2">
-            <div class="row-collum justify-content-around" id="menu">
-                <div class="col-12">
-                    <button type="button" id="rechercher">Rechercher</button>
-                </div>
-                <div class="col-12">
-                    <button type="button" id="reservation">Réserver votre séjour</button>
-                </div>
-                <div class="col-12">
-                    <button type="button" id="panier">Votre panier</button>
-                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="container-fluid" id="index-container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-11">
+
+
+                <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <!--                        TODO : hamburger!-->
+                        <span class="navbar-toggler-icon">Menu</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link menu" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown menu">
+                                <a class="nav-link dropdown-toggle menu" href="#" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Qui sommes-nous ?</a>
+                                    <a class="dropdown-item" href="#">Actualités</a>
+                                    <a class="dropdown-item" href="#">Accès</a>
+                                    <a class="dropdown-item" href="#">Contact</a>
+                                    <a class="dropdown-item" href="#">Recrutement</a>
+                                    <a class="dropdown-item" href="#">Evenements</a>
+                                    <a class="dropdown-item" href="#">Press</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu">
+                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
+                                    Chambres & Suites
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Chambre Classique</a>
+                                    <a class="dropdown-item" href="#">Chambre Confort</a>
+                                    <a class="dropdown-item" href="#">Chambre Deluxe</a>
+                                    <a class="dropdown-item" href="#">Chambre Suite</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
+                                    Spa
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Spa Détente</a>
+                                    <a class="dropdown-item" href="#">Spa Découverte</a>
+                                    <a class="dropdown-item" href="#">Spa Relaxant</a>
+                                    <a class="dropdown-item" href="#">Spa Evasion</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link menu" href="#">Avis</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
+                                   aria-label="Search" required>
+                            <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
+                        </form>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="col-12 col-md-1 zone3 ">
+                <button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#infos">
+                    Réservation
+                </button>
+            </div>
+        </div>
+
+    </div>
+</header>
 
 <!--Coeur de la page type de chambre-->
 
@@ -256,11 +292,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script src="js/style.js"></script>
-<script>  $(".dropdown-menu li a").click(function () {
-    var selText = $(this).text();
-    $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class=caret></span>');
-});</script>
+<script src="script.js"></script>
 </body>
 
 </html>
