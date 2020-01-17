@@ -110,8 +110,9 @@ a:hover {
 
 
 /**  Carousel **/
+
+/*never used*/
 .carousel-slide {
-    border: 2px green solid;
 }
 
 /**  Carousel **/
@@ -121,12 +122,10 @@ a:hover {
 
 
 .my-2 {
-    border: black solid 2px;
     margin: 50px;
 }
 
 .my-3 {
-    border: royalblue solid 2px;
     padding: 50px;
 }
 
@@ -187,7 +186,6 @@ h2 {
 .btn-cl {
     display: flex;
     padding-top: 10px;
-    border: solid darkblue 2px;
     margin: 10px;
 }
 
@@ -234,12 +232,10 @@ h2 {
 /*Chambres*/
 
 .col {
-    border: solid 1px black;
     text-align: center;
 }
 
 .chambres-classe {
-    border: solid 2px brown;
     padding-bottom: 30px;
     text-align: center !important;
 }
@@ -250,7 +246,6 @@ h2 {
 }
 
 #suite {
-    border: solid 2px orange;
 }
 
 
