@@ -9,10 +9,10 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!--    TODO what's that?-->
     <!--    <link rel="shortcut icon" href="img/shared/telechargement.jpg">-->
@@ -20,13 +20,13 @@
 </head>
 
 <body id="haut">
-    <!--Nav bar-->
+<!--Nav bar-->
+<div id="main" class="container-fluid">
     <header id="header">
-        <div class="container-fluid" id="chambres-nav">
+        <div id="chambres-nav">
             <div class="row">
                 <div class="col-12 col-md-2 logo">
                     <img src="img/shared/logo.png" alt="Logo de l'hotel">
-
                 </div>
                 <div class="col-12 col-md-9 titre">
                     <h2 class="hotel">HôtelCOP</h2>
@@ -40,21 +40,22 @@
 
                     <div class="col-12 zone1 ">
                         <a target="_blank" rel="external nofollow" href="#">
-                            <img src="img/shared/france-flag-icon-16.png"></a>
+                            <img src="img/shared/france-flag-icon-16.png" alt="traduire en français">
+                        </a>
                         <a target="_blank" rel="external nofollow" href="#">
-                            <img src="img/shared/united-kingdom-flag-icon-16.png"></a>
+                            <img src="img/shared/united-kingdom-flag-icon-16.png" alt="translate to english">
+                        </a>
                     </div>
                     <div class="col-12 zone2">
                         <a target="_blank" rel="external nofollow" href="#">
-                            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png"></a>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="se rendre vers le panier">
+                        </a>
                     </div>
-
-
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid" id="index-container">
+        <div id="index-container">
 
             <div class="row">
 
@@ -63,8 +64,8 @@
 
                     <nav class="navbar navbar-expand-md">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                             <!--                        TODO : hamburger!-->
                             <span class="navbar-toggler-icon">Menu</span>
                         </button>
@@ -76,7 +77,7 @@
                                 </li>
                                 <li class="nav-item dropdown menu">
                                     <a class="nav-link dropdown-toggle menu" href="#" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
+                                       aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Qui sommes-nous ?</a>
                                         <a class="dropdown-item" href="#">Actualités</a>
@@ -115,7 +116,7 @@
                             </ul>
                             <form class="form-inline">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
-                                    aria-label="Search" required>
+                                       aria-label="Search" required>
                                 <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
                             </form>
                         </div>
@@ -124,7 +125,7 @@
                 </div>
                 <div class="col-12 col-md-1 zone3 ">
                     <button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal"
-                        data-target="#infos">
+                            data-target="#infos">
                         Réservation
                     </button>
                 </div>
@@ -136,7 +137,6 @@
     <!--Coeur de la page type de chambre-->
 
     <section class="container" style="border: 2px solid purple;">
-
         <div class="row" id="nos-chambres">
             <div class="col-10 my-3 mt-2">
                 <h1>Nos chambres</h1>
@@ -147,11 +147,13 @@
                     Astoria Trianon Palace Versailles ont été conçues pour créer un environnement relaxant dans un cadre
                     royal et élégant.
                 </p>
+            </div>
+        </div>
     </section>
     <!----------------- Carousel --------------------->
 
-    <section class="container-fluid">
-        <div id="chambres-classe" class="row">
+    <section>
+        <div class="row chambres-classe">
             <div class="col-8 col-md-6 mb-4 mt-2 chambres classique">
                 <div class="col-12">
                     <h2 class="my-2">Chambres classique</h2>
@@ -164,12 +166,12 @@
                     Wi-Fi (payant).
                 </p>
                 <div class="btn-cl">
-                    <a class="bouton2" href="chambres.html" target="_blank" class="btn">
+                    <a href="chambres.html" target="_blank" class="btn bouton2">
                         Réserver
                     </a>
                 </div>
             </div>
-            <div class="col-6 main">
+            <div class="col-6 purple-border">
                 <!-- <div class="col-8"> -->
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -190,9 +192,9 @@
     </section>
 
 
-    <section class="container-fluid">
+    <section>
         <div id="chambres-confort" class="row">
-            <div class="col-6 main">
+            <div class="col-6 purple-border">
 
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -212,7 +214,7 @@
                 <div class="col-12">
                     <h2 class="my-2">Chambres confort</h2>
                 </div>
-                <p class="my-3">Les chambres Comfort donnent sur la ville et l'avenue montaigne 
+                <p class="my-3">Les chambres Comfort donnent sur la ville et l'avenue montaigne
                     montagnes environnantes du Parc Naturel du Groupe
                     de Tessa. Certaines chambres jouissent par ailleurs d'une terrasse
                     avec vue panoramique
@@ -222,7 +224,7 @@
                     Détails supplémentaires : dimensions 22 m2
                 </p>
                 <div class="btn-cl">
-                    <a class="bouton2" href="chambres.html" target="_blank" class="btn">
+                    <a href="chambres.html" target="_blank" class="bouton2 btn">
                         Réserver
                     </a>
                 </div>
@@ -230,24 +232,24 @@
         </div>
     </section>
 
-    <section class="container-fluid">
-        <div id="chambres-classe" class="row">
+    <section>
+        <div class="row chambres-class">
             <div class="col-8 col-md-6 mb-4 mt-2 chambres deluxe">
                 <div class="col-12">
                     <h2 class="my-2">Chambre Deluxe</h2>
                 </div>
-                <p>Une chambre spacieuse où chaque objet est l’incarnation de notre 
+                <p>Une chambre spacieuse où chaque objet est l’incarnation de notre
                     illustre patrimoine. La plupart de nos chambres peuvent être communicantes,
-                     laissant ainsi aux familles et aux amis la possibilité de créer leur 
-                     propre appartement parisien.
+                    laissant ainsi aux familles et aux amis la possibilité de créer leur
+                    propre appartement parisien.
                 </p>
                 <div class="btn-cl">
-                    <a class="bouton2" href="chambres.html" target="_blank" class="btn">
+                    <a href="chambres.html" target="_blank" class="bouton2 btn">
                         Réserver
                     </a>
                 </div>
             </div>
-            <div class="col-6 main">
+            <div class="col-6 purple-border">
                 <!-- <div class="col-8"> -->
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -268,24 +270,25 @@
     </section>
 
     <h2 class="my-2">Suite royale</h2>
-    
-    <section class="container-fluid">
+
+    <section>
         <div class="row">
             <div class="col-8">
-                <p>La Suite Royale peut accueillir un maximum de 3 adultes. 
-                    Le lit supplémentaire est facturé 80 EUR par nuit (gratuit pour les enfants 
+                <p>La Suite Royale peut accueillir un maximum de 3 adultes.
+                    Le lit supplémentaire est facturé 80 EUR par nuit (gratuit pour les enfants
                     de moins de 12 ans).
-                    Située au dernier étage, la Suite Royale offre, de sa terrasse, une vue 
-                    xceptionnelle sur la Tour Eiffel. Son décor aux tonalités chaudes et 
+                    Située au dernier étage, la Suite Royale offre, de sa terrasse, une vue
+                    xceptionnelle sur la Tour Eiffel. Son décor aux tonalités chaudes et
                     intimes contribue à créer une atmosphère unique.
                     Spacieux salon et salle à manger
-                    Un grand salon avec un espace salle à manger donne sur sa grande 
+                    Un grand salon avec un espace salle à manger donne sur sa grande
                     terrasse privée.
                     Luxueuse salle de bain avec une large bagnoire
-                    A côté de la spacieuse chambre de la Suite Royale, se trouve une salle de bains équipée d'un double lavabo, d'une large baignoire et d'une cabine de douche séparées.
+                    A côté de la spacieuse chambre de la Suite Royale, se trouve une salle de bains équipée d'un double
+                    lavabo, d'une large baignoire et d'une cabine de douche séparées.
                 </p>
                 <div class="btn-cl">
-                    <a class="bouton2" href="chambres.html" target="_blank" class="btn">
+                    <a href="chambres.html" target="_blank" class="btn bouton2">
                         Réserver
                     </a>
                 </div>
@@ -303,22 +306,23 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
+</div>
+<!--Footer-->
 
-    <!--Footer-->
-
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

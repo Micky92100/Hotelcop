@@ -10,13 +10,13 @@ img {
     /*DISPOSABLE*/
     flex-grow: 1;
     flex-shrink: 1;
+    flex-shrink: 1;
 }
 /**  Nav **/
 
 #header {
     background-color: #01344c
 }
-
 
 .fixed {
     position: fixed;
@@ -189,7 +189,7 @@ h2 {
     padding-top: 25px
 }
 
-.main {
+.purple-border {
     border: 1px purple solid;
     
 }
@@ -235,7 +235,7 @@ h2 {
 .espace{
     border: solid 1px black;
 }
-#chambres-classe{
+.chambres-classe{
     border: solid 2px brown;
     padding-bottom: 30px;
 }
