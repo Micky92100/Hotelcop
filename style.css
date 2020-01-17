@@ -252,8 +252,8 @@ h2 {
 }
 
 
- #suite{
-     border: solid 2px lime;
+#suite{
+     border: solid 2px orange;
  }
 #who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
     color: #d4a22f;
