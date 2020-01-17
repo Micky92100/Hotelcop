@@ -109,7 +109,13 @@ a:hover {
 
 
 /**  Carousel **/
-
+.carousel slide{
+    border: 2px green solid ;
+}
+.carousel{
+    border : 2px purple solid;
+   display: inline-flex;
+}
 
 /**  Carousel **/
 
@@ -171,9 +177,11 @@ h2 {
     margin: 0 auto;
 }
 
-.col {
-    border: solid 1px black;
-    text-align: center;
+.btn-cl{
+    display: flex;
+    padding-top: 10px;
+    border: solid darkblue 2px;
+    margin: 10px;
 }
 
 
@@ -182,7 +190,8 @@ h2 {
 }
 
 .main {
-    border: 1px black solid;
+    border: 1px purple solid;
+    
 }
 
 .main img {
@@ -214,15 +223,40 @@ h2 {
 }
 
 /*Chambres*/
+.text-title{
+    border: solid 1px green;
+    flex-wrap: wrap;
+}
+
+.col {
+    border: solid 1px black;
+    text-align: center;
+}
+.espace{
+    border: solid 1px black;
+}
+#chambres-classe{
+    border: solid 2px brown;
+    padding-bottom: 30px;
+}
+
 
 #who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
     color: #d4a22f;
 }
 
 .my-2 {
-    text-align: right;
+    border: black solid 2px;
+    margin:50px;
+    
 }
 
+.my-3{
+    border: royalblue solid 2px;
+    
+    padding: 50px ;
+    
+}
 /**  FOOTER **/
 /* footer text  */
 footer {
