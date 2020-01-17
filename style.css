@@ -4,15 +4,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/*TODO donner des dimensions spécifiques aux images EN UTILISANT witdh: ___%;*/
-
-img {
-    /*DISPOSABLE*/
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-p{
+p {
     text-align: justify;
 }
 
@@ -21,6 +13,12 @@ p{
 #header {
     background-color: #01344c
 }
+
+
+.dropdown-menu, .nav-link, .dropdown-toggle {
+    color: #d4a22f;
+}
+
 
 .fixed {
     position: fixed;
@@ -90,7 +88,7 @@ p{
     /*width: 30px;*/
 }
 
-
+/*never used*/
 #nav {
     margin: 0;
     list-style-type: none;
@@ -116,15 +114,21 @@ a:hover {
     border: 2px green solid;
 }
 
-.carousel {
-    border: 2px purple solid;
-    display: inline-flex;
-}
-
 /**  Carousel **/
 
 
 /**  Coeur du site **/
+
+
+.my-2 {
+    border: black solid 2px;
+    margin: 50px;
+}
+
+.my-3 {
+    border: royalblue solid 2px;
+    padding: 50px;
+}
 
 h1 {
     color: #d4a22f;
@@ -165,7 +169,7 @@ h2 {
 .bouton2 {
     background-color: rgb(2, 3, 29);
     color: rgb(233, 192, 104);
-    box-shadow: 6.5px 11.258px 43px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 6px 11px 43px 0 rgba(0, 0, 0, 0.17);
     font-size: 15px;
     padding: 24px 43px;
     margin: 0 auto;
@@ -178,7 +182,6 @@ h2 {
     border: 1px solid #d5bc79;
     font-size: 15px;
     text-align: center;
-    margin: 0 auto;
 }
 
 .btn-cl {
@@ -203,11 +206,13 @@ h2 {
 }
 
 
+/*never used*/
 .fadin-bott {
     opacity: 0;
     transition: transform 1s ease, opacity 0.5s ease-in-out;
 }
 
+/*never used*/
 .fadin-bott {
     transform: translate(0px, 50px);
 }
@@ -227,46 +232,37 @@ h2 {
 }
 
 /*Chambres*/
-.text-title {
-    border: solid 1px green;
-    flex-wrap: wrap;
-}
 
 .col {
     border: solid 1px black;
     text-align: center;
 }
 
-.espace {
-    border: solid 1px black;
-}
-
 .chambres-classe {
     border: solid 2px brown;
     padding-bottom: 30px;
-    text-align: center!important;
+    text-align: center !important;
 }
 
-.room-blurb {
-    display: inline-block;
+.room-blurb-large {
+    display: block;
+    margin: auto;
+}
+
+#suite {
+    border: solid 2px orange;
 }
 
 
-#suite{
-     border: solid 2px orange;
- }
-#who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
-    color: #d4a22f;
-}
+@media all and (max-width: 992px) {
+    .reverse {
+        display: flex;
+        flex-direction: column;
+    }
 
-.my-2 {
-    border: black solid 2px;
-    margin: 50px;
-}
-
-.my-3 {
-    border: royalblue solid 2px;
-    padding: 50px;
+    .small-last {
+        order: 1;
+    }
 }
 
 /**  FOOTER **/
