@@ -11,10 +11,12 @@ p {
 #main {
     min-height: 62.5vh;
 }
+
 /**  Nav **/
 
 #header {
-    background-color: #01344c
+    background-color: #01344c;
+    width: 100%;
 }
 
 
@@ -30,6 +32,10 @@ p {
     left: 0;
     z-index: 2;
     opacity: 0.5;
+}
+
+#header:hover {
+    opacity: 1;
 }
 
 .logo {
@@ -62,8 +68,8 @@ p {
 
 .hotel {
     color: white;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
+    font-size: 3em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-top: 10px;
     margin-left: auto;
@@ -72,9 +78,58 @@ p {
     font-weight: bold;
 }
 
+@media screen and (min-width: 0px) {
+    #panier-pre-nav {
+        position: fixed;
+        top: 1%;
+        left: 1%;
+        z-index: 3;
+        opacity: 1;
+    }
+
+    #header:hover {
+        opacity: 1;
+    }
+
+    #reserv {
+        position: fixed;
+        top: 1%;
+        right: 1%;
+        z-index: 3;
+        opacity: 1;
+    }
+
+    #langage {
+        position: fixed;
+        top: 8%;
+        right: 2%;
+        z-index: 3;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 763px) {
+    #langage {
+        position: fixed;
+        top: 8%;
+        right: 2%;
+        z-index: 3;
+        opacity: 1;
+    }
+
+    #panier-pre-nav {
+        position: fixed;
+        top: 1%;
+        left: 20%;
+        z-index: 3;
+        opacity: 1;
+    }
+}
+
 
 .etoile {
-    font-size: 1rem;
+    color: #d4a22f;
+    font-size: 1em;
 }
 
 .langage {
@@ -82,9 +137,9 @@ p {
 }
 
 .zone1, .zone2, .zone3 {
+    margin: 0 auto;
     border: 1px solid black;
     text-align: center;
-    margin: 10px auto;
 }
 
 .zone2 img {
@@ -95,14 +150,14 @@ p {
 #nav {
     margin: 0;
     list-style-type: none;
-    color: #d4a22f;
+    color: white;
     font-size: 25px;
 }
 
 .menu {
     color: white;
     list-style-type: none;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 /* lien survolé par le curseur */
@@ -113,6 +168,10 @@ a:hover {
 
 
 /**  Carousel **/
+
+/*#carouselExampleIndicators {*/
+/*    margin: 0*/
+/*}*/
 
 /*never used*/
 .carousel-slide {
@@ -126,6 +185,7 @@ a:hover {
 
 .my-2 {
     margin: 50px;
+    text-align: center;
 }
 
 .my-3 {
@@ -134,8 +194,8 @@ a:hover {
 
 h1 {
     color: #d4a22f;
-    font-size: 55px;
-    letter-spacing: 2px;
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
     text-align: center;
     font-weight: bold;
     border-bottom: 1px solid #d4a22f;
@@ -143,9 +203,10 @@ h1 {
 
 h2 {
     color: #d4a22f;
-    font-size: 40px;
-    letter-spacing: 1px;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
     font-weight: bold;
+    text-align: center;
 }
 
 .bouton1 {
@@ -153,7 +214,7 @@ h2 {
     margin: 0 auto;
     padding: 12px 25px;
     border: 1px solid #d5bc79;
-    font-size: 15px;
+    font-size: 0.8em;
     text-align: center;
     background: #ffffff;
 }
@@ -163,7 +224,7 @@ h2 {
     margin: 0 auto;
     padding: 12px 25px;
     border: 1px solid #d5bc79;
-    font-size: 15px;
+    font-size: .8em;
     text-align: center;
 }
 
@@ -172,7 +233,7 @@ h2 {
     background-color: rgb(2, 3, 29);
     color: rgb(233, 192, 104);
     box-shadow: 6px 11px 43px 0 rgba(0, 0, 0, 0.17);
-    font-size: 15px;
+    font-size: 1em;
     padding: 24px 43px;
     margin: 0 auto;
 }
@@ -180,9 +241,9 @@ h2 {
 .bouton2:hover {
     background-color: #d4a22f;
     margin: 0 auto;
-    padding: 12px 25px;
+    padding: 24px 43px;
     border: 1px solid #d5bc79;
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -202,6 +263,12 @@ h2 {
 .presentation p {
     padding-top: 25px
 }
+
+/*???*/
+/*.main {
+    border: 1px black solid;
+    text-align: center;
+}*/
 
 .main img {
     /*width: 100%;*/
@@ -234,6 +301,23 @@ h2 {
 }
 
 /*Chambres*/
+
+#who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
+    color: white;
+}
+
+
+/* Panier */
+.heading {
+    color: black;
+    text-align: center;
+}
+
+/* Réservation */
+
+#reservation {
+    padding-left: 5px;
+}
 
 .col {
     text-align: center;
@@ -292,6 +376,7 @@ h2 {
     width: 60%;
 }
 
+/*never used*/
 .tel {
     float: right;
 }
@@ -344,6 +429,14 @@ ul {
     color: white;
     font-size: 15px;
 
+}
+
+i {
+    padding-left: 15px;
+}
+
+span {
+    padding-left: 15px;
 }
 
 footer a {
