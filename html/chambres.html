@@ -146,7 +146,7 @@
                                 <a class="nav-link menu" href="#">Avis</a>
                             </li>
                         </ul>
-                        <form class="form-inline">
+                        <form class="form-inline" id="search-form">
                             <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
                                    aria-label="Search" required>
                             <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
@@ -171,7 +171,7 @@
                 </button>
             </div>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row" id="reservation-form">
                     <div class="form-group">
                         <div class="col-12">
                             <label for="datepicker">Date d'arrivée: </label><input type="text" id="datepicker">
@@ -496,7 +496,7 @@
         </div>
         <div class="col-12 col-md-5">
             <h4>Newsletter</h4>
-            <form>
+            <form method="post" id="newsletter-form">
                 <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Saisisez votre mail"
                        required>
                 <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>

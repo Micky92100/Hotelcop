@@ -145,7 +145,7 @@
                                 <a class="nav-link menu" href="#">Avis</a>
                             </li>
                         </ul>
-                        <form class="form-inline">
+                        <form class="form-inline" id="search-form">
                             <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
                                    aria-label="Search" required>
                             <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
@@ -170,26 +170,26 @@
                 </button>
             </div>
             <div class="container-fluid">
-                <div class="row">
+                <form class="row" id="reservation-form">
                     <div class="form-group">
                         <div class="col-12">
-                            <label for="datepicker">Date d'arrivée: </label><input type="text" id="datepicker">
+                            <label for="datepicker">Date d'arrivée: </label><input type="date" id="datepicker">
                         </div>
                         <div class="col-12">
                             <label for="chambre">Choisissez votre chambre</label>
                         </div>
                         <div class="col-12">
                             <select class="form-control" id="chambre" name="chambre" onchange="calcul()">
-                                <option selected>Choix</option>
-                                <option> Classique</option>
-                                <option> Confort</option>
-                                <option> Deluxe</option>
-                                <option> Suite</option>
+                                <option selected value="choix">Choix</option>
+                                <option value="classique">Classique</option>
+                                <option value="confort">Confort</option>
+                                <option value="deluxe">Deluxe</option>
+                                <option value="suite">Suite</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="form-group">
+                    <div class="form-group">
+                        <div class="col-12">
                             <label for="nuit">Nombre de nuits</label>
                             <select class="form-control" id="nuit" name="nuit" onchange="calcul()">
                                 <script>
@@ -204,11 +204,11 @@
                         <div class="form-group">
                             <label for="personne">Nombre de personnes</label>
                             <select class="form-control" id="personne" name="personne" onchange="calcul()">
-                                <option value="0"> 0</option>
-                                <option value="1"> 1</option>
-                                <option value="2"> 2</option>
-                                <option value="3"> 3</option>
-                                <option value="4"> 4</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                             </select>
                         </div>
                     </div>
@@ -216,9 +216,9 @@
                         <div class="form-group">
                             <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
                             <select class="form-control" id="restauration" name="restaurant" onchange="calcul()">
-                                <option value="0" selected> ...</option>
-                                <option value="2"> Oui</option>
-                                <option value="0"> Non</option>
+                                <option value="0" selected>...</option>
+                                <option value="2">Oui</option>
+                                <option value="0">Non</option>
                             </select><br>
                         </div>
 
@@ -232,11 +232,11 @@
                         <div class="col-12">
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-                                <button class="btn btn-info ">Reserver</button>
+                                <input type="submit" class="btn btn-info" value="Reserver">
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -497,9 +497,9 @@
         </div>
         <div class="col-12 col-md-5">
             <h4>Newsletter</h4>
-            <form method="post" id="mainForm">
-                <input type="email" id="exampleInputEmail1" class="form-control" aria-describedby="emailHelp"
-                       placeholder="Saisisez votre mail" required>
+            <form method="post" id="newsletter-form">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Saisisez votre mail"
+                       required>
                 <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>
                 <button type="submit" class="btn btn-primary">Enregistrer</button>
             </form>
