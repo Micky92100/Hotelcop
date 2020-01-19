@@ -5,14 +5,36 @@ $(document).ready(function () {
     $(function () {
         $('#reservation-form').submit(function (e) {
             e.preventDefault();
-            const $results = $('#reservation-form').serializeArray();
+            // lorsque la fonction est lancée, on réinitialise le flag 'error' à 'false'
+            let error = false;
 
-            if ($results[2].value === 0 || $results[2].value === "0") {
-            //    ERRORS
-            //    return;
-            } else {
-                // calcul();
+            // on récupère tout les éléments html de class 'res' dans une variable $results, qui sera un array
+            const $results = $('.res');
+
+            // un for loop nous permet d'évaluer si les valeurs sont nulles, auquel cas il affiche des bordures rouges pour alerter l'user
+            for (let i = 0; i < $results.length; i++) {
+                if ($results[i].value === 0 || $results[i].value === "0" || $results[i].value === ''){
+                    $results[i].style.border = 'solid 2px darkred';
+
+                    // on flag 'error' comme 'true'
+                    error = true;
+                } else {
+                    // si l'user a rectifié son erreur, la bordure rouge disparaît.
+                    $results[i].style.border = '';
+                }
             }
+            // grace à notre flag 'error', on peut empêcher l'envoi du formulaire si les champs requis ne sont pas tous remplis
+            if (!error) {
+
+                // $results contient tout nos résultats validés, on peut les envoyer au backend
+                window.alert("Réservation terminée. Félicitations!");
+
+                // on peut maintenant réinitialiser le formulaire
+                for (let i = 0; i < $results.length; i++) {
+                    $results[i].value = 0;
+                }
+            }
+
         });
     });
 
