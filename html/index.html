@@ -14,15 +14,29 @@
 </head>
 <body id="haut">
 
+<!-- les éléments en position fixed dans la page-->
+<button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1" id="Panier" >
+    Panier
+</button>
+<div id="langage">
+    <a target="_blank" rel="external nofollow" href="#">
+        <img alt="Bootstrap" class="img-responsive img-rounded" src="img/shared/france-flag-icon-16.png"></a>
+    <a target="_blank" rel="external nofollow" href="#">
+        <img src="img/shared/united-kingdom-flag-icon-16.png"></a>
+</div>
+<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation" id="reserv"  >
+    Réservation
+</button>
+
 <!--Nav bar-->
 
 <header id="header">
     <div class="nav container-fluid">
         <div class="row">
             <div class="col-12 col-md-2 logo">
-                <img src="../img/shared/logo.png" alt="">
+                <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
             </div>
-            <div class="col-12 col-md-9 titre">
+            <div class="col-12 col-md-10 titre">
                 <h2 class="hotel">HôtelCOP</h2>
                 <i class="fas fa-star etoile"></i>
                 <i class="fas fa-star etoile"></i>
@@ -50,7 +64,7 @@
     </div>
     <div id="index-container">
         <div class="row">
-            <div class="col-12 col-md-11">
+            <div class="col-12 col-md-12">
                 <nav class="navbar navbar-expand-md">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
