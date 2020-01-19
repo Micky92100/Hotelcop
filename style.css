@@ -8,6 +8,9 @@ p {
     text-align: justify;
 }
 
+#main {
+    min-height: 62.5vh;
+}
 /**  Nav **/
 
 #header {
@@ -188,6 +191,7 @@ h2 {
     padding-top: 10px;
     margin: 10px;
 }
+
 .btn-rest {
     display: flex;
     padding-top: 5px;
@@ -222,7 +226,7 @@ h2 {
 
 /*Index*/
 
-#index-container, #index-nav, #chambres-nav {
+#index-container, #index-nav, #chambres-nav, #restaurant-nav, #example-nav {
     background-color: #01344c;
 }
 
@@ -264,66 +268,80 @@ h2 {
         order: 1;
     }
 }
+
 /*************** Restaurant ***************/
-#Appelez-nous{
+#appelez-nous {
     border: blue solid 2px;
     width: 40%;
     margin: 0 auto;
 }
-.reservation{
-    font-size:0.5rem;
+
+.reservation {
+    font-size: 0.5rem;
     margin: 10px;
     padding: 25px 30px;
     border: 2px yellow solid;
     text-align: left;
     background: #01344c;
 }
-.appel{
+
+.appel {
     font-size: x-large;
 }
-.presentation-carte{
-   margin: 50px auto;
+
+.presentation-carte {
+    margin: 50px auto;
     text-align: center;
     border: solid 2px black;
     font-size: medium;
     width: 60%;
 }
-.tel{
-   float: right ;
+
+.tel {
+    float: right;
 }
-.my-6{
+
+.my-6 {
     border: 2px red solid;
 }
-#horaires-restaurants{
+
+#horaires-restaurants {
     margin: 0 auto;
     border: blueviolet solid 2px;
     width: 90%;
     display: table;
-    
+
 }
-#horaires-restaurants p{
+
+#horaires-restaurants p {
     border-bottom: 1px solid #d4a22f;
     margin: 0 auto;
     text-justify: auto;
-    
+
 }
-span{
+
+span {
     float: right;
     margin-right: 10px;
 }
 
-.menu-list{
+.menu-list {
     border: solid 2px brown;
     margin-top: 50px;
     height: 50px;
 
 }
+
 /***************** fin de page restaurant ********************/
 /**  FOOTER **/
 /* footer text  */
 footer {
     background-color: #01344c;
     color: white;
+    margin-top: 35px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 ul {
@@ -333,17 +351,17 @@ ul {
 
 }
 
-#footer a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
 /* lien survolé par le curseur */
-#footer a:hover {
+footer a:hover {
     color: #808080;
     text-decoration: none;
 }
 
-#footer ul {
+footer ul {
     padding: 0;
 }
