@@ -16,7 +16,7 @@ img {
 
 #header {
     background-color: #01344c;
-    width:100%
+    width: 100%
 }
 
 
@@ -77,51 +77,55 @@ img {
     #Panier {
         position: fixed;
         top: 1%;
-        left:1%;
+        left: 1%;
         z-index: 3;
         opacity: 1;
     }
+
     #header:hover {
         opacity: 1;
     }
-    #reserv { 
+
+    #reserv {
         position: fixed;
         top: 1%;
-        right:1%;
+        right: 1%;
         z-index: 3;
         opacity: 1;
     }
-    #langage {
-        position: fixed;
-        top: 8%;
-        right:2%;
-        z-index: 3;
-        opacity: 1;
-    }
-  }
 
-  @media screen and (min-width: 763px) {
     #langage {
         position: fixed;
         top: 8%;
-        right:2%;
+        right: 2%;
         z-index: 3;
         opacity: 1;
     }
+}
+
+@media screen and (min-width: 763px) {
+    #langage {
+        position: fixed;
+        top: 8%;
+        right: 2%;
+        z-index: 3;
+        opacity: 1;
+    }
+
     #Panier {
         position: fixed;
         top: 1%;
-        left:20%;
+        left: 20%;
         z-index: 3;
         opacity: 1;
     }
-  }
+}
 
 /*Index*/
 
 #index-container, #index-nav, #chambres-nav {
     background-color: #01344c;
-    color:white;
+    color: white;
 }
 
 .etoile {
@@ -166,7 +170,9 @@ a:hover {
 
 
 /**  Carousel **/
-#carouselExampleIndicators {maring:0}
+#carouselExampleIndicators {
+    maring: 0
+}
 
 /**  Carousel **/
 
@@ -187,7 +193,7 @@ h2 {
     font-size: 2.5em;
     letter-spacing: 0.05em;
     font-weight: bold;
-        text-align: center;
+    text-align: center;
 }
 
 .bouton1 {
@@ -230,10 +236,10 @@ h2 {
 }
 
 .col {
-    border: solid 1px black;       
-     text-align: center;
+    border: solid 1px black;
+    text-align: center;
 
- 
+
 }
 
 
@@ -243,8 +249,9 @@ h2 {
 
 .main {
     border: 1px black solid;
-    text-align: center  ;
+    text-align: center;
 }
+
 /**
 .main img {
     max-width: 80%;
@@ -277,9 +284,13 @@ ul {
 }
 
 
+i {
+    padding-left: 15px;
+}
 
-i {padding-left: 15px;}
-span {padding-left: 15px;}
+span {
+    padding-left: 15px;
+}
 
 #footer a {
     color: white;
@@ -297,8 +308,6 @@ span {padding-left: 15px;}
 }
 
 
-
-
 /*Chambres*/
 
 #who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
@@ -309,14 +318,17 @@ span {padding-left: 15px;}
     text-align: center;
 }
 
-/* Panier */ 
-.heading {color:black;
+/* Panier */
+.heading {
+    color: black;
     font-family: 'Playfair Display', serif;
-text-align: center;}
+    text-align: center;
+}
 
-/* Réservation */ 
+/* Réservation */
 
-#reservation {padding-left: 5px;
+#reservation {
+    padding-left: 5px;
     font-family: 'Playfair Display', serif;
 
 }

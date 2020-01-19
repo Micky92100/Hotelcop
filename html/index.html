@@ -17,7 +17,7 @@
 <body id="haut">
 
 <!-- les éléments en position fixed dans la page-->
-<button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1" id="Panier" >
+<button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1" id="Panier">
     Panier
 </button>
 <div id="langage">
@@ -26,7 +26,8 @@
     <a target="_blank" rel="external nofollow" href="#">
         <img src="img/shared/united-kingdom-flag-icon-16.png"></a>
 </div>
-<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation" id="reserv"  >
+<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
+        id="reserv">
     Réservation
 </button>
 <!--Nav bar-->
@@ -45,56 +46,54 @@
                 <i class="fas fa-star etoile"></i>
                 <i class="fas fa-star etoile"></i>
             </div>
-            
 
-               
-                        
-<!-- Votre panier en modal -->
 
-  <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true" data-backdrop="false">
-    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
- 
-      <div class="modal-content">
-   
-        <div class="modal-header">
-          <h3 class="heading" >Votre séjour
-          </h3>
-  
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" class="white-text">&times;</span>
-          </button>
-        </div>
- 
-        <div class="modal-body">
-  
-          <div class="row">
-            <div class = "col-12">
-                <div class="form-group heading">
-            <label>Montant du séjour: </label>
-            <span id="result" class="btn btn-primary">0</span>
-            <span>€</span>
-          </div>
-      </div>
-            <div class="col-12 heading" >
-              <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour ou à nous contacter pour plus d'informations </p>
+            <!-- Votre panier en modal -->
+
+            <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h3 class="heading">Votre séjour
+                            </h3>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="white-text">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group heading">
+                                        <label>Montant du séjour: </label>
+                                        <span id="result" class="btn btn-primary">0</span>
+                                        <span>€</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 heading">
+                                    <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour ou à
+                                        nous contacter pour plus d'informations </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a type="button" class="btn btn-info" data-toggle="modal" data-target="#reservation">Réserver</a>
+                            <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <a type="button" class="btn btn-info" data-toggle="modal" data-target="#reservation">Réserver</a>
-          <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
-        </div>
-      </div>
+            <!-- Fin panier modal -->
 
+
+        </div>
     </div>
-  </div>
-  <!-- Fin panier modal -->
-
-
-
-            </div>
-        </div>
     </div>
 
     <div class="container-fluid" id="index-container">
@@ -165,9 +164,8 @@
                 </nav>
 
             </div>
-           
-                
-          
+
+
         </div>
 
     </div>
@@ -176,86 +174,86 @@
 <!--Réservation en modal -->
 
 <div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="heading">Réserver votre réservation </h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class = "container-fluid">
-      <div class = "row" >
-        <div class="form-group"> 
-            <div class = "col-12">
-                <p>Date d'arrivée: <input type="text" id="datepicker"></p>
+     aria-hidden="true">
+    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="heading">Réserver votre réservation </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-12">
+                            <p>Date d'arrivée: <input type="text" id="datepicker"></p>
+                        </div>
+                        <div class="col-12">
+                            <label for="chambre">Choisissez votre chambre</label>
+                        </div>
+                        <div class="col-12">
+                            <select class="form-control" id="chambre" name="chambre" onchange="calcul()">
+                                <option selected>Choix</option>
+                                <option> Classique</option>
+                                <option> Confort</option>
+                                <option> Deluxe</option>
+                                <option> Suite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="nuit">Nombre de nuits</label>
+                            <select class="form-control" id="nuit" name="nuit" onchange="calcul()">
+                                <script>
+                                    for (i = 0; i <= 31; i++) {
+                                        document.write('<option>' + i + '</option>');
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="personne">Nombre de personnes</label>
+                            <select class="form-control" id="personne" name="personne" onchange="calcul()">
+                                <option value="0"> 0</option>
+                                <option value="1"> 1</option>
+                                <option value="2"> 2</option>
+                                <option value="3"> 3</option>
+                                <option value="4"> 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
+                            <select class="form-control" id="restauration" name="restaurant" onchange="calcul()">
+                                <option value="0" selected> ...</option>
+                                <option value="2"> Oui</option>
+                                <option value="0"> Non</option>
+                            </select><br>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Montant du séjour: </label>
+                                <span id="result" class="btn btn-primary">0</span>
+                                <span>€</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                                <button class="btn btn-info ">Reserver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-            <div class = "col-12">
-            <label for="chambre">Choisissez votre chambre</label>
-        </div>
-        <div class = "col-12">
-            <select class="form-control" id="chambre" name="chambre" onchange="calcul()">
-              <option selected>Choix </option>
-              <option > Classique </option>
-              <option > Confort </option>
-              <option > Deluxe </option>
-              <option > Suite </option>
-            </select>
-        </div>
-          </div>
-          <div class = "col-12">
-          <div class="form-group">
-            <label for="nuit">Nombre de nuits</label>
-            <select class="form-control" id="nuit" name="nuit" onchange="calcul()">
-              <script>
-                for(i=0; i <= 31; i++){
-                  document.write('<option>' + i + '</option>');
-                }
-              </script>
-            </select>
-        </div>
-          </div>
-          <div class = "col-12">
-          <div class="form-group">
-            <label for="personne">Nombre de personnes</label>
-            <select class="form-control" id="personne" name="personne" onchange="calcul()">
-              <option value="0"> 0 </option>
-              <option value="1"> 1 </option>
-              <option value="2"> 2 </option>
-              <option value="3"> 3 </option>
-              <option value="4"> 4 </option>
-            </select>
-        </div>
-          </div>
-          <div class = "col-12">
-            <div class="form-group">
-            <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
-            <select class="form-control" id="restauration" name="restaurant" onchange="calcul()">
-              <option value="0" selected> ... </option>
-              <option value="2"> Oui </option>
-              <option value="0"> Non </option>
-            </select><br>
-        </div>
-        
-            <div class = "col-12">
-                <div class="form-group">
-            <label>Montant du séjour: </label>
-            <span id="result" class="btn btn-primary">0</span>
-            <span>€</span>
-          </div>
-      </div>
-      <div class = "col-12">
-      <div class="modal-footer">
-        <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-        <button class="btn btn-info ">Reserver</button>
-      </div>
-    </div>
-    </div>
-</div>
-</div>
-    </div>
-  </div>
 </div>
 
 <!-- -->
@@ -328,13 +326,14 @@
                     </p>
                 </div>
                 <div class="col-md-12 col-lg-6 mb-6 mt-2 main">
-                    <img class="img-fluid" src="https://www.journaldespalaces.com/images/le_5_codet_julien_douieb.png" width="50%">
+                    <img class="img-fluid" src="https://www.journaldespalaces.com/images/le_5_codet_julien_douieb.png"
+                         width="50%">
                 </div>
             </div>
         </div>
     </div>
 </section>
-    <section class="container-fluid">
+<section class="container-fluid">
     <div class="row my-5">
         <div class="col-md-12 col-lg-6 mt-1 main">
             <div class="col">
@@ -507,7 +506,7 @@
             <h4>Newsletter</h4>
             <form method="post" id="mainForm">
                 <input type="email" id="exampleInputEmail1"
-                      >
+                >
                 <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>
                 <button type="submit" class="btn btn-primary">Enregistrer</button>
             </form>
@@ -525,8 +524,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="script.js"></script>
 
 
