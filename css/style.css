@@ -203,11 +203,6 @@ h2 {
     padding-top: 25px
 }
 
-.purple-border {
-    border: 1px purple solid;
-
-}
-
 .main img {
     /*width: 100%;*/
 }
@@ -226,7 +221,7 @@ h2 {
 
 /*Index*/
 
-#index-container, #index-nav, #chambres-nav, #restaurant-nav, #example-nav {
+#index-container, .nav {
     background-color: #01344c;
 }
 
