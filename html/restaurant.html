@@ -197,7 +197,7 @@
                                     if (i === 0) {
                                         document.write('<option value="0"></option>')
                                     } else {
-                                        document.write('<option value="'+i+'">' + i + '</option>');
+                                        document.write('<option value="' + i + '">' + i + '</option>');
                                     }
                                 }
                             </script>
@@ -356,25 +356,69 @@
         </div>
 
 
-        <div class="container mt-3 col-12">
+        <div class="container mt-3 col-8">
             <div class="cartes">
                 <div class="btn-cl">
-                    <button data-toggle="collapse" class="btn bouton2" data-target="#cartes-midi">
+                    <button class="btn bouton2" id="btn1" data-toggle="collapse" data-target="#carte1">
                         Carte Brasserie
                     </button>
-                    <button class="btn bouton2" data-toggle="collapse" data-target="#carte-après-midi">
+                    <button class="btn bouton2" id="btn2" data-toggle="collapse" data-target="#carte2">
                         Carte Dégustation
                     </button>
-                    <button class="btn bouton2" data-toggle="collapse" data-target="#carte-restaurant">
+                    <button class="btn bouton2" id="btn3" data-toggle="collapse" data-target="#carte3">
                         Carte Restaurant
                     </button>
                 </div>
 
-                <div class="col-4 ">
-                    <div class="brasserie">
-                        <div class="collapse" id="cartes-midi">
+
+                <div class="brasserie">
+                    <div class="collapse" id="carte1">
+                        <h6>Entrée</h6>
+                        98 Spéciales Gillardeau n°5,<br>
+                        4 Creuses de Bretagne Cadoret n°4,<br>
+                        Fines de Claire Barrau n°4<br>
+                        <hr>
+
+                        <h6>Plats</h6>
+                        4 Spéciales Gillardeau n°5,<br>
+                        4 Creuses de Bretagne Cadoret n°4,<br>
+                        Fines de Claire Barrau n°4
+                        <hr>
+
+
+                        <h6>Dessert</h6>
+                        4 Spéciales Gillardeau n°5,<br>
+                        4 Creuses de Bretagne Cadoret n°4,<br>
+                        Fines de Claire Barrau n°4
+
+                    </div>
+                </div>
+                <div class="carte-après-midi">
+                    <div class="degustation">
+                        <div class="collapse" id="carte2">
                             <h6>Entrée</h6>
-                            98 Spéciales Gillardeau n°5,<br>
+                            45 Spéciales Gillardeau n°5,<br>
+                            46 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4<br>
+                            <hr>
+
+                            <h6>Plats</h6>
+                            4 Spéciales Gillardeau n°5,<br>
+                            4 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4
+                            <hr>
+
+
+                            <h6>Dessert</h6>
+                            4 Spéciales Gillardeau n°5,<br>
+                            4 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4
+                        </div>
+                    </div>
+                    <div class="restaurant">
+                        <div class="collapse" id="carte3">
+                            <h6>Entrée</h6>
+                            60 Spéciales Gillardeau n°5,<br>
                             4 Creuses de Bretagne Cadoret n°4,<br>
                             Fines de Claire Barrau n°4<br>
                             <hr>
@@ -390,67 +434,6 @@
                             4 Spéciales Gillardeau n°5,<br>
                             4 Creuses de Bretagne Cadoret n°4,<br>
                             Fines de Claire Barrau n°4
-
-                        </div>
-                    </div>
-                </div>
-                    <!-- <div class="col-4"></div> -->
-                    <div class="col-12">
-                    <div class="container col-4">
-                        <div class="carte-après-midi">
-                            <div class="btn-cl">
-
-                            </div>
-                            <div class="degustation">
-                            <div class="collapse" id="carte-après-midi">
-                                <h6>Entrée</h6>
-                                45 Spéciales Gillardeau n°5,<br>
-                                46 Creuses de Bretagne Cadoret n°4,<br>
-                                Fines de Claire Barrau n°4<br>
-                                <hr>
-
-                                <h6>Plats</h6>
-                                4 Spéciales Gillardeau n°5,<br>
-                                4 Creuses de Bretagne Cadoret n°4,<br>
-                                Fines de Claire Barrau n°4
-                                <hr>
-
-
-                                <h6>Dessert</h6>
-                                4 Spéciales Gillardeau n°5,<br>
-                                4 Creuses de Bretagne Cadoret n°4,<br>
-                                Fines de Claire Barrau n°4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class=" col-12 col-4">
-                        <div class="container col-4">
-                            <div class="restaurant">
-                                <div class="btn-cl">
-
-                                </div>
-
-                                <div class="collapse" id="carte-restaurant">
-                                    <h6>Entrée</h6>
-                                    60 Spéciales Gillardeau n°5,<br>
-                                    4 Creuses de Bretagne Cadoret n°4,<br>
-                                    Fines de Claire Barrau n°4<br>
-                                    <hr>
-
-                                    <h6>Plats</h6>
-                                    4 Spéciales Gillardeau n°5,<br>
-                                    4 Creuses de Bretagne Cadoret n°4,<br>
-                                    Fines de Claire Barrau n°4
-                                    <hr>
-
-
-                                    <h6>Dessert</h6>
-                                    4 Spéciales Gillardeau n°5,<br>
-                                    4 Creuses de Bretagne Cadoret n°4,<br>
-                                    Fines de Claire Barrau n°4
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -463,7 +446,7 @@
     <!--Modal -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -540,7 +523,7 @@
                 <h4>Newsletter</h4>
                 <form>
                     <input type="email" class="form-control" aria-describedby="emailHelp"
-                        placeholder="Saisisez votre mail" required>
+                           placeholder="Saisisez votre mail" required>
                     <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre
                         actualité</small>
                     <button type="submit" class="btn btn-primary">Enregistrer</button>
@@ -552,14 +535,14 @@
     <!-- JS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 
 </body>

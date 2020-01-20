@@ -3,6 +3,27 @@ $(document).ready(function () {
 
 
     $(function () {
+        $('#btn1').click(function () {
+            $('#carte2').collapse('hide');
+            $('#carte3').collapse('hide');
+        });
+    });
+
+    $(function () {
+        $('#btn2').click(function () {
+            $('#carte3').collapse('hide');
+            $('#carte1').collapse('hide');
+        });
+    });
+
+    $(function () {
+        $('#btn3').click(function () {
+            $('#carte1').collapse('hide');
+            $('#carte2').collapse('hide');
+        });
+    });
+
+    $(function () {
         $('#reservation-form').submit(function (e) {
             e.preventDefault();
             // lorsque la fonction est lancée, on réinitialise le flag 'error' à 'false'
@@ -48,7 +69,7 @@ $(document).ready(function () {
             $.post($form.attr('action'), $form.serialize())
                 .done(function (data) {
                     $('#html').html(data);
-                    $('#formulaire').modal('hide')
+                    $('#formulaire').modal()
                 })
                 .fail(function () {
                     alert('ça ne marche pas...')
