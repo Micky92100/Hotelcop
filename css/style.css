@@ -429,7 +429,12 @@ span {
 .brasserie{
     border:2px solid red;
 }
-
+.degustation{
+    border: solid 2px blue;
+}
+.restaurant{
+    border: solid 2px purple;
+}
 /***************** fin de page restaurant ********************/
 /**  FOOTER **/
 /* footer text  */
