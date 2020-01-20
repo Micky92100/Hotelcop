@@ -12,6 +12,11 @@ p {
     min-height: 100vh;
 }
 
+hr{
+    background-color: #01344c;
+}
+
+
 /**  Nav **/
 
 #header {
@@ -209,6 +214,7 @@ h2 {
     text-align: center;
 }
 
+
 .bouton1 {
     color: #d4a22f;
     margin: 0 auto;
@@ -256,7 +262,7 @@ h2 {
 .btn-rest {
     display: flex;
     padding-top: 5px;
-    margin: 5px;
+    margin: 0 auto;
 
 }
 
@@ -349,8 +355,13 @@ h2 {
 }
 
 /*************** Restaurant ***************/
+
+.carousel-item img{
+    height: 60vh;
+}
+
 #appelez-nous {
-    border: blue solid 2px;
+    /* border: blue solid 2px; */
     width: 40%;
     margin: 0 auto;
 }
@@ -359,7 +370,7 @@ h2 {
     font-size: 0.5rem;
     margin: 10px;
     padding: 25px 30px;
-    border: 2px yellow solid;
+    /* border: 2px yellow solid; */
     text-align: left;
     background: #01344c;
 }
@@ -371,23 +382,18 @@ h2 {
 .presentation-carte {
     margin: 50px auto;
     text-align: center;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     font-size: medium;
     width: 60%;
 }
 
-/*never used*/
-.tel {
-    float: right;
-}
-
 .my-6 {
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 #horaires-restaurants {
     margin: 0 auto;
-    border: blueviolet solid 2px;
+    /* border: blueviolet solid 2px; */
     width: 90%;
     display: table;
 
@@ -405,11 +411,23 @@ span {
     margin-right: 10px;
 }
 
+.restaurant-title{
+    margin: 20px;
+    /* border: black 2px solid; */
+}
 .menu-list {
-    border: solid 2px brown;
-    margin-top: 50px;
-    height: 50px;
-
+    /* border: solid 2px brown;    */
+    padding: 80px;
+    text-align: center;
+}
+.carousel-item p{
+    color: black;
+}
+.cartes{
+    border: solid brown solid;
+}
+.brasserie{
+    border:2px solid red;
 }
 
 /***************** fin de page restaurant ********************/
