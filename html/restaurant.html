@@ -1,102 +1,104 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Site abdelhafid ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Restaurant</title>
 </head>
-<body id="haut">
 
 <!-- les éléments en position fixed dans la page-->
-
 <button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1"
         id="panier-pre-nav">
-    Panier
-</button>
-<div id="langage">
-    <a target="_blank" rel="external nofollow" href="#">
-        <img alt="traduire en français" class="img-responsive img-rounded" src="../img/shared/france-flag-icon-16.png"></a>
-    <a target="_blank" rel="external nofollow" href="#">
-        <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
-</div>
-<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
+        Panier
+    </button>
+    <div id="langage">
+        <a target="_blank" rel="external nofollow" href="#">
+            <img alt="traduire en français" class="img-responsive img-rounded"
+                src="../img/shared/france-flag-icon-16.png"></a>
+        <a target="_blank" rel="external nofollow" href="#">
+            <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
+    </div>
+    <button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
         id="reserv">
-    Réservation
-</button>
+        Réservation
+    </button>
 
-<!--Nav bar-->
+    <!--Nav bar-->
 
-<header id="header">
-    <div class="nav container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-2 logo">
-                <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
-            </div>
+    <header id="header">
+        <div class="nav container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-2 logo">
+                    <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
+                </div>
 
-            <!-- Votre panier en modal -->
+                <!-- Votre panier en modal -->
 
-            <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                 aria-hidden="true" data-backdrop="false">
-                <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true" data-backdrop="false">
+                    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
 
-                    <div class="modal-content">
+                        <div class="modal-content">
 
-                        <div class="modal-header">
-                            <h3 class="heading">Votre séjour
-                            </h3>
+                            <div class="modal-header">
+                                <h3 class="heading">Votre séjour
+                                </h3>
 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="white-text">&times;</span>
-                            </button>
-                        </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                </button>
+                            </div>
 
-                        <div class="modal-body">
+                            <div class="modal-body">
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group heading">
-                                        <label>Montant du séjour: </label>
-                                        <span class="result btn btn-primary">0</span>
-                                        <span>€</span>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group heading">
+                                            <label>Montant du séjour: </label>
+                                            <span class="result btn btn-primary">0</span>
+                                            <span>€</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 heading">
+                                        <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour
+                                            ou à
+                                            nous contacter pour plus d'informations </p>
                                     </div>
                                 </div>
-                                <div class="col-12 heading">
-                                    <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour ou à
-                                        nous contacter pour plus d'informations </p>
-                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <a type="button" class="btn btn-info" data-toggle="modal"
+                                    data-target="#reservation">Réserver</a>
+                                <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
                             </div>
                         </div>
-                        <div class="modal-footer justify-content-center">
-                            <a type="button" class="btn btn-info" data-toggle="modal" data-target="#reservation">Réserver</a>
-                            <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
+            <div class="col-12 col-md-10 titre">
+                <h2 class="hotel">HôtelCOP</h2>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+                <i class="fas fa-star etoile"></i>
+            </div>
         </div>
-        <div class="col-12 col-md-10 titre">
-            <h2 class="hotel">HôtelCOP</h2>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-        </div>
-    </div>
-    <!-- Fin panier modal -->
-    <div id="index-container">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <!-- Fin panier modal -->
+        <div id="index-container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <nav class="navbar navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <!--TODO : hamburger!-->
@@ -146,7 +148,7 @@
                                 <a class="nav-link menu" href="#">Avis</a>
                             </li>
                         </ul>
-                        <form class="form-inline">
+                        <form class="form-inline" id="search-form">
                             <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
                                    aria-label="Search" required>
                             <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
@@ -165,83 +167,82 @@
     <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="heading">Réserver votre réservation </h3>
+                <h3 class="heading">Votre réservation </h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label for="datepicker">Date d'arrivée: </label><input type="text" id="datepicker">
-                        </div>
-                        <div class="col-12">
-                            <label for="chambre">Choisissez votre chambre</label>
-                        </div>
-                        <div class="col-12">
-                            <select class="form-control" id="chambre" name="chambre" onchange="calcul()">
-                                <option selected>Choix</option>
-                                <option> Classique</option>
-                                <option> Confort</option>
-                                <option> Deluxe</option>
-                                <option> Suite</option>
-                            </select>
-                        </div>
-                    </div>
+                <form class="row form-group" id="reservation-form">
+                    <!--                    0-->
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="nuit">Nombre de nuits</label>
-                            <select class="form-control" id="nuit" name="nuit" onchange="calcul()">
-                                <script>
-                                    for (i = 0; i <= 31; i++) {
-                                        document.write('<option>' + i + '</option>');
+                        <label for="datepicker">Date d'arrivée : </label>
+                        <input type="date" id="datepicker" class="res">
+                    </div>
+                    <!--                    1-->
+                    <div class="col-12">
+                        <label for="chambre">Choisissez votre chambre : </label>
+                        <select class="res" id="chambre" name="chambre" onchange="calcul()">
+                            <option selected value="0"></option>
+                            <option value="classique">Classique</option>
+                            <option value="confort">Confort</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <!--                    2-->
+                    <div class="col-12">
+                        <label for="nuit">Nombre de nuits : </label>
+                        <select class="res" id="nuit" name="nuit" onchange="calcul()">
+                            <script>
+                                for (let i = 0; i <= 31; i++) {
+                                    if (i === 0) {
+                                        document.write('<option value="0"></option>')
+                                    } else {
+                                        document.write('<option value="' + i + '">' + i + '</option>');
                                     }
-                                </script>
-                            </select>
-                        </div>
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <!--                    3-->
+                    <div class="col-12">
+                        <label for="personne">Nombre de personnes : </label>
+                        <select class="res" id="personne" name="personne" onchange="calcul()">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <!--                    4-->
+                    <div class="col-12">
+                        <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
+                        <select class="res" id="restauration" name="restaurant" onchange="calcul()">
+                            <option value="0" selected></option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select><br>
                     </div>
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="personne">Nombre de personnes</label>
-                            <select class="form-control" id="personne" name="personne" onchange="calcul()">
-                                <option value="0"> 0</option>
-                                <option value="1"> 1</option>
-                                <option value="2"> 2</option>
-                                <option value="3"> 3</option>
-                                <option value="4"> 4</option>
-                            </select>
-                        </div>
+                        <label>Montant du séjour: </label>
+                        <span class="result btn btn-primary">0</span>
+                        <span>€</span>
                     </div>
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
-                            <select class="form-control" id="restauration" name="restaurant" onchange="calcul()">
-                                <option value="0" selected> ...</option>
-                                <option value="2"> Oui</option>
-                                <option value="0"> Non</option>
-                            </select><br>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="form-group">
-                                <label>Montant du séjour: </label>
-                                <span class="result btn btn-primary">0</span>
-                                <span>€</span>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-                                <button class="btn btn-info ">Reserver</button>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                            <input type="submit" class="btn btn-info" value="Reserver">
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Fin de modal -->
 
 <!--Coeur de la page-->
 
@@ -281,45 +282,39 @@
         </div>
     </div>
 
+    <!-- Fin de modal -->
     <!--Carousel-->
+    <div class="container-fluid">
+        <div class="restaurant-title">
+            <h2>Restaurant Hotelcop</h2>
+        </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div id="carousel-restaurant" class="carousel-slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-restaurant" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-restaurant" data-slide-to="1"></li>
-                    <li data-target="#carousel-restaurant" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"
-                             src="https://www.paris-france-hotel.com/cache/img/chambre-triple-77117-1600-900-auto.jpg"
-                             alt="First slide">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/restaurant.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/restaurant1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/restaurant2.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                             src="https://convention.parisinfo.com/var/otcp/sites/images/media/1.-photos/80.-photos-sugar/hebergements/shangri-la-hotel-paris-7-630x405-c-otcp/5113431-1-fre-FR/Shangri-La-Hotel-Paris-7-630x405-C-OTCP.jpg"
-                             alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                             src="https://www.paris-france-hotel.com/cache/img/chambre-triple-77117-1600-900-auto.jpg"
-                             alt="Third slide">
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-restaurant" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-restaurant" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </div>
-
     <!--Contenu-->
 
     <section class="container-fluid">
@@ -329,25 +324,30 @@
                     <div class="reservation ">
                         <h1 class="appel">Appelez-nous pour réserver une
                             table</h1>
-                        <div class="btn-rest">
+                        <div class="btn-cl">
                             <a href="chambres.html" target="_blank" class="btn bouton2">
-                                Contact
-                            </a></div>
+                                Réserver
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="presentation-carte">
-                <p>Troisième signature gastronomique de l'Hotelcop,
-                    L’Orangerie, récompensé d’une étoile au Guide Michelin,
-                    offre une nouvelle expérience culinaire au coeur
-                    du Palace. Dans cet écrin intimisite,
-                    la cuisine laisse la part belle aux végétaux,
-                    aux produits laitiers et aux produits de la mer.
-                    Une partition culinaire résolument tournée vers
-                    la gastronomie de demain, légère, équilibrée
-                    et féminine.</p>
-            </div>
         </div>
+        <hr>
+        <div class="presentation-carte">
+            <hr>
+            <p>Troisième signature gastronomique de l'Hotelcop,
+                L’Orangerie, récompensé d’une étoile au Guide Michelin,
+                offre une nouvelle expérience culinaire au coeur
+                du Palace. Dans cet écrin intimisite,
+                la cuisine laisse la part belle aux végétaux,
+                aux produits laitiers et aux produits de la mer.
+                Une partition culinaire résolument tournée vers
+                la gastronomie de demain, légère, équilibrée
+                et féminine.</p>
+            <hr>
+        </div>
+
         <div id="horaires-restaurants">
             <div class="container">
                 <div class="col"></div>
@@ -357,149 +357,213 @@
             </div>
         </div>
 
-        <div class="menu-list">
-            <h2>Menu</h2>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div id="carousel-assiettes" class="carousel-slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-assiettes" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-assiettes" data-slide-to="1"></li>
-                        <li data-target="#carousel-assiettes" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100"
-                                 src="https://www.paris-france-hotel.com/cache/img/chambre-triple-77117-1600-900-auto.jpg"
-                                 alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100"
-                                 src="https://convention.parisinfo.com/var/otcp/sites/images/media/1.-photos/80.-photos-sugar/hebergements/shangri-la-hotel-paris-7-630x405-c-otcp/5113431-1-fre-FR/Shangri-La-Hotel-Paris-7-630x405-C-OTCP.jpg"
-                                 alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100"
-                                 src="https://www.paris-france-hotel.com/cache/img/chambre-triple-77117-1600-900-auto.jpg"
-                                 alt="Third slide">
+
+        <div class="container mt-3 col-12">
+            <div class="cartes">
+                <div class="btn-cl">
+                    <button data-toggle="collapse" class="btn bouton2" data-target="#cartes-midi">
+                        Carte Brasserie
+                    </button>
+                    <button class="btn bouton2" data-toggle="collapse" data-target="#carte-après-midi">
+                        Carte Dégustation
+                    </button>
+                    <button class="btn bouton2" data-toggle="collapse" data-target="#carte-restaurant">
+                        Carte Restaurant
+                    </button>
+                </div>
+
+                <div class="col-4 ">
+                    <div class="brasserie">
+                        <div class="collapse" id="cartes-midi">
+                            <h6>Entrée</h6>
+                            98 Spéciales Gillardeau n°5,<br>
+                            4 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4<br>
+                            <hr>
+
+                            <h6>Plats</h6>
+                            4 Spéciales Gillardeau n°5,<br>
+                            4 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4
+                            <hr>
+
+
+                            <h6>Dessert</h6>
+                            4 Spéciales Gillardeau n°5,<br>
+                            4 Creuses de Bretagne Cadoret n°4,<br>
+                            Fines de Claire Barrau n°4
+
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel-assiettes" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-assiettes" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                </div>
+                    <!-- <div class="col-4"></div> -->
+                    <div class="col-12">
+                    <div class="container col-4">
+                        <div class="carte-après-midi">
+                            <div class="btn-cl">
+
+                            </div>
+                            <div class="degustation">
+                            <div class="collapse" id="carte-après-midi">
+                                <h6>Entrée</h6>
+                                45 Spéciales Gillardeau n°5,<br>
+                                46 Creuses de Bretagne Cadoret n°4,<br>
+                                Fines de Claire Barrau n°4<br>
+                                <hr>
+
+                                <h6>Plats</h6>
+                                4 Spéciales Gillardeau n°5,<br>
+                                4 Creuses de Bretagne Cadoret n°4,<br>
+                                Fines de Claire Barrau n°4
+                                <hr>
+
+
+                                <h6>Dessert</h6>
+                                4 Spéciales Gillardeau n°5,<br>
+                                4 Creuses de Bretagne Cadoret n°4,<br>
+                                Fines de Claire Barrau n°4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class=" col-12 col-4">
+                        <div class="container col-4">
+                            <div class="restaurant">
+                                <div class="btn-cl">
+
+                                </div>
+
+                                <div class="collapse" id="carte-restaurant">
+                                    <h6>Entrée</h6>
+                                    60 Spéciales Gillardeau n°5,<br>
+                                    4 Creuses de Bretagne Cadoret n°4,<br>
+                                    Fines de Claire Barrau n°4<br>
+                                    <hr>
+
+                                    <h6>Plats</h6>
+                                    4 Spéciales Gillardeau n°5,<br>
+                                    4 Creuses de Bretagne Cadoret n°4,<br>
+                                    Fines de Claire Barrau n°4
+                                    <hr>
+
+
+                                    <h6>Dessert</h6>
+                                    4 Spéciales Gillardeau n°5,<br>
+                                    4 Creuses de Bretagne Cadoret n°4,<br>
+                                    Fines de Claire Barrau n°4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
-</div>
 
-<!--Modal -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Vous souhaitez vous inscrire à la newsletter ?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                <button type="button" class="btn btn-primary">Oui</button>
-            </div>
-        </div>
-    </div>
-</div>
+    <!--Modal -->
 
-<!--Footer-->
-
-<footer class="container-fluid">
-    <div class="row">
-        <div class="col-12 col-md-4">
-            <h4>Menu</h4>
-            <div class="row">
-                <div class="col-md-5">
-                    <ul>
-                        <li><a href="#">Nos chambres</a></li>
-                        <li><a href="#">Nos Psa</a></li>
-                        <li><a href="#">Nos restaurants</a></li>
-                        <li><a href="#">Accès</a></li>
-                    </ul>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-md-5">
-                    <ul class="list">
-                        <li><a href="#">Qui sommes-nous?</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">Plan du site</a></li>
-                    </ul>
+                <div class="modal-body">
+                    Vous souhaitez vous inscrire à la newsletter ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                    <button type="button" class="btn btn-primary">Oui</button>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-3">
-            <h4>Nous suivre</h4>
-            <ul>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-facebook-square" title="Facebook"></i>Facebook
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="#" rel="external nofollow">
-                        <i class="fab fa-twitter-square" title="Twitter"></i>Twitter
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-linkedin" title="Linkedin"></i>Linkedin
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-google-plus-square" title="Google+"></i>Google+
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-envelope-square" title="Envoyer par mail"></i>Nous écrire
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-5">
-            <h4>Newsletter</h4>
-            <form>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Saisisez votre mail"
-                       required>
-                <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>
-                <button type="submit" class="btn btn-primary">Enregistrer</button>
-            </form>
-        </div>
     </div>
-</footer>
+    <!--Footer-->
 
-<!-- JS -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h4>Menu</h4>
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul>
+                            <li><a href="#">Nos chambres</a></li>
+                            <li><a href="#">Nos Psa</a></li>
+                            <li><a href="#">Nos restaurants</a></li>
+                            <li><a href="#">Accès</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="list">
+                            <li><a href="#">Qui sommes-nous?</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4>Nous suivre</h4>
+                <ul>
+                    <li>
+                        <a target="_blank" rel="external nofollow" href="#">
+                            <i class="fab fa-facebook-square" title="Facebook"></i>Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#" rel="external nofollow">
+                            <i class="fab fa-twitter-square" title="Twitter"></i>Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="external nofollow" href="#">
+                            <i class="fab fa-linkedin" title="Linkedin"></i>Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="external nofollow" href="#">
+                            <i class="fab fa-google-plus-square" title="Google+"></i>Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope-square" title="Envoyer par mail"></i>Nous écrire
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-5">
+                <h4>Newsletter</h4>
+                <form>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Saisisez votre mail" required>
+                    <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre
+                        actualité</small>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!-- JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
+
 </html>
