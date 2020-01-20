@@ -1,104 +1,101 @@
 <!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Site abdelhafid ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Restaurant</title>
+    <title>Restaurant Carte</title>
 </head>
+<body id="haut">
 
 <!-- les éléments en position fixed dans la page-->
 <button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1"
         id="panier-pre-nav">
-        Panier
-    </button>
-    <div id="langage">
-        <a target="_blank" rel="external nofollow" href="#">
-            <img alt="traduire en français" class="img-responsive img-rounded"
-                src="../img/shared/france-flag-icon-16.png"></a>
-        <a target="_blank" rel="external nofollow" href="#">
-            <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
-    </div>
-    <button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
+    Panier
+</button>
+<div id="langage">
+    <a target="_blank" rel="external nofollow" href="#">
+        <img alt="traduire en français" class="img-responsive img-rounded" src="../img/shared/france-flag-icon-16.png"></a>
+    <a target="_blank" rel="external nofollow" href="#">
+        <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
+</div>
+<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
         id="reserv">
-        Réservation
-    </button>
+    Réservation
+</button>
 
-    <!--Nav bar-->
+<!--Nav bar-->
 
-    <header id="header">
-        <div class="nav container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-2 logo">
-                    <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
-                </div>
+<header id="header">
+    <div class="nav container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-2 logo">
+                <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
+            </div>
 
-                <!-- Votre panier en modal -->
+            <!-- Votre panier en modal -->
 
-                <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true" data-backdrop="false">
-                    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+            <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
 
-                        <div class="modal-content">
+                    <div class="modal-content">
 
-                            <div class="modal-header">
-                                <h3 class="heading">Votre séjour
-                                </h3>
+                        <div class="modal-header">
+                            <h3 class="heading">Votre séjour
+                            </h3>
 
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" class="white-text">&times;</span>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group heading">
-                                            <label>Montant du séjour: </label>
-                                            <span class="result btn btn-primary">0</span>
-                                            <span>€</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 heading">
-                                        <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour
-                                            ou à
-                                            nous contacter pour plus d'informations </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                                <a type="button" class="btn btn-info" data-toggle="modal"
-                                    data-target="#reservation">Réserver</a>
-                                <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
-                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="white-text">&times;</span>
+                            </button>
                         </div>
 
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group heading">
+                                        <label>Montant du séjour: </label>
+                                        <span class="result btn btn-primary">0</span>
+                                        <span>€</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 heading">
+                                    <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour ou à
+                                        nous contacter pour plus d'informations </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a type="button" class="btn btn-info" data-toggle="modal" data-target="#reservation">Réserver</a>
+                            <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <div class="col-12 col-md-10 titre">
-                <h2 class="hotel">HôtelCOP</h2>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-            </div>
         </div>
-        <!-- Fin panier modal -->
-        <div id="index-container">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <nav class="navbar navbar-expand-md">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <div class="col-12 col-md-10 titre">
+            <h2 class="hotel">HôtelCOP</h2>
+            <i class="fas fa-star etoile"></i>
+            <i class="fas fa-star etoile"></i>
+            <i class="fas fa-star etoile"></i>
+            <i class="fas fa-star etoile"></i>
+            <i class="fas fa-star etoile"></i>
+        </div>
+    </div>
+    <!-- Fin panier modal -->
+    <div id="index-container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <!--TODO : hamburger!-->
@@ -199,7 +196,7 @@
                                     if (i === 0) {
                                         document.write('<option value="0"></option>')
                                     } else {
-                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                        document.write('<option value="'+i+'">' + i + '</option>');
                                     }
                                 }
                             </script>

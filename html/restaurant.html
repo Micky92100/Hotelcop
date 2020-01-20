@@ -15,7 +15,6 @@
 <body id="haut">
 
 <!-- les éléments en position fixed dans la page-->
-
 <button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1"
         id="panier-pre-nav">
     Panier
@@ -146,7 +145,7 @@
                                 <a class="nav-link menu" href="#">Avis</a>
                             </li>
                         </ul>
-                        <form class="form-inline">
+                        <form class="form-inline" id="search-form">
                             <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
                                    aria-label="Search" required>
                             <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
@@ -165,83 +164,82 @@
     <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="heading">Réserver votre réservation </h3>
+                <h3 class="heading">Votre réservation </h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label for="datepicker">Date d'arrivée: </label><input type="text" id="datepicker">
-                        </div>
-                        <div class="col-12">
-                            <label for="chambre">Choisissez votre chambre</label>
-                        </div>
-                        <div class="col-12">
-                            <select class="form-control" id="chambre" name="chambre" onchange="calcul()">
-                                <option selected>Choix</option>
-                                <option> Classique</option>
-                                <option> Confort</option>
-                                <option> Deluxe</option>
-                                <option> Suite</option>
-                            </select>
-                        </div>
-                    </div>
+                <form class="row form-group" id="reservation-form">
+                    <!--                    0-->
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="nuit">Nombre de nuits</label>
-                            <select class="form-control" id="nuit" name="nuit" onchange="calcul()">
-                                <script>
-                                    for (i = 0; i <= 31; i++) {
-                                        document.write('<option>' + i + '</option>');
+                        <label for="datepicker">Date d'arrivée : </label>
+                        <input type="date" id="datepicker" class="res">
+                    </div>
+                    <!--                    1-->
+                    <div class="col-12">
+                        <label for="chambre">Choisissez votre chambre : </label>
+                        <select class="res" id="chambre" name="chambre" onchange="calcul()">
+                            <option selected value="0"></option>
+                            <option value="classique">Classique</option>
+                            <option value="confort">Confort</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <!--                    2-->
+                    <div class="col-12">
+                        <label for="nuit">Nombre de nuits : </label>
+                        <select class="res" id="nuit" name="nuit" onchange="calcul()">
+                            <script>
+                                for (let i = 0; i <= 31; i++) {
+                                    if (i === 0) {
+                                        document.write('<option value="0"></option>')
+                                    } else {
+                                        document.write('<option value="'+i+'">' + i + '</option>');
                                     }
-                                </script>
-                            </select>
-                        </div>
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <!--                    3-->
+                    <div class="col-12">
+                        <label for="personne">Nombre de personnes : </label>
+                        <select class="res" id="personne" name="personne" onchange="calcul()">
+                            <option value="0"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <!--                    4-->
+                    <div class="col-12">
+                        <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
+                        <select class="res" id="restauration" name="restaurant" onchange="calcul()">
+                            <option value="0" selected></option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select><br>
                     </div>
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="personne">Nombre de personnes</label>
-                            <select class="form-control" id="personne" name="personne" onchange="calcul()">
-                                <option value="0"> 0</option>
-                                <option value="1"> 1</option>
-                                <option value="2"> 2</option>
-                                <option value="3"> 3</option>
-                                <option value="4"> 4</option>
-                            </select>
-                        </div>
+                        <label>Montant du séjour: </label>
+                        <span class="result btn btn-primary">0</span>
+                        <span>€</span>
                     </div>
                     <div class="col-12">
-                        <div class="form-group">
-                            <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
-                            <select class="form-control" id="restauration" name="restaurant" onchange="calcul()">
-                                <option value="0" selected> ...</option>
-                                <option value="2"> Oui</option>
-                                <option value="0"> Non</option>
-                            </select><br>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="form-group">
-                                <label>Montant du séjour: </label>
-                                <span class="result btn btn-primary">0</span>
-                                <span>€</span>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-                                <button class="btn btn-info ">Reserver</button>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                            <input type="submit" class="btn btn-info" value="Reserver">
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Fin de modal -->
 
 <!--Coeur de la page-->
 
