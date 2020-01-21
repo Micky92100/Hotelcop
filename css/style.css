@@ -410,18 +410,28 @@ h2 {
     font-size: medium;
     width: 60%;
 }
-.gallery{
-    margin: 0 auto;
-    width: 60%; 
-    border: black solid 2px;
-   
+
+.wrapper {
+    margin: 70px;
+    text-align: center;
+    display: grid;
+    grid-auto-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    /* border: black solid 2px; 
+    */
+    
 }
+
+
+
+
 .my-6 {
     /* border: 2px red solid; */
 }
 
 #horaires-restaurants {
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    text-align: center;
     /* border: blueviolet solid 2px; */
     width: 90%;
     display: table;
@@ -430,13 +440,8 @@ h2 {
 
 #horaires-restaurants p {
     border-bottom: 1px solid #d4a22f;
-    margin: 0 auto;
-    text-justify: auto;
-
-}
-
-span {
-   justify-content: end;
+    margin: 0 auto;  
+   
 }
 
 .restaurant-title{
@@ -451,13 +456,7 @@ span {
 .carousel-item p{
     color: black;
 }
-.cartes{
-}
-.brasserie{
-}
 
-.restaurant{
-}
 /***************** fin de page restaurant ********************/
 /**  FOOTER **/
 /* footer text  */
