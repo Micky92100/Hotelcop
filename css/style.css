@@ -197,6 +197,8 @@ a:hover {
     padding: 50px;
 }
 
+
+
 h1 {
     color: #d4a22f;
     font-size: 3.5em;
@@ -237,7 +239,7 @@ h2 {
 
 .bouton2 {
     background-color: rgb(2, 3, 29);
-    color: rgb(233, 192, 104);
+    color: rgb(221, 177, 81);
     box-shadow: 6px 11px 43px 0 rgba(0, 0, 0, 0.17);
     font-size: 1em;
     padding: 24px 43px;
@@ -253,17 +255,38 @@ h2 {
     text-align: center;
 }
 
+.appel-nous{
+    
+    margin: 50px auto;
+    text-align: center;
+    font-size: medium;
+    width: 60%;
+    height: 10vh;
+}
+#p01{
+    color: #d4a22f;
+    text-align: center;
+
+}
+
+
 .btn-cl {
     display: flex;
     padding-top: 10px;
     margin: 10px;
 }
 
-.btn-rest {
-    display: flex;
-    padding-top: 5px;
+.bouton2-appel{
+  background-color: rgb(2, 3, 29);
+  box-shadow: 6px 11px 43px 0 rgba(0, 0, 0, 0.17);
+  display: inline-block;
+  color: #d4a22f;
+}
+.bouton2-appel:hover {
+    background-color: #d4a22f;
     margin: 0 auto;
-
+    border: 1px solid #d5bc79;
+    
 }
 
 .presentation p {
@@ -357,7 +380,7 @@ h2 {
 /*************** Restaurant ***************/
 
 .carousel-item img{
-    height: 60vh;
+   /* height: 60vh;*/
 }
 
 #appelez-nous {
@@ -371,12 +394,13 @@ h2 {
     margin: 10px;
     padding: 25px 30px;
     /* border: 2px yellow solid; */
-    text-align: left;
+    height: 60px; 
     background: #01344c;
 }
 
 .appel {
-    font-size: x-large;
+    font-size: 150%;
+    text-align: left;
 }
 
 .presentation-carte {
@@ -386,7 +410,12 @@ h2 {
     font-size: medium;
     width: 60%;
 }
-
+.gallery{
+    margin: 0 auto;
+    width: 60%; 
+    border: black solid 2px;
+   
+}
 .my-6 {
     /* border: 2px red solid; */
 }
@@ -407,8 +436,7 @@ h2 {
 }
 
 span {
-    float: right;
-    margin-right: 10px;
+   justify-content: end;
 }
 
 .restaurant-title{
