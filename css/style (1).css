@@ -1,0 +1,322 @@
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/*TODO donner des dimensions spécifiques aux images EN UTILISANT witdh: ___%;*/
+
+img {
+    /*DISPOSABLE*/
+    flex-grow: 0.5;
+    flex-shrink: 1;
+}
+
+/**  Nav **/
+
+#header {
+    background-color: #01344c;
+    width:100%
+}
+
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+#header:hover {
+    opacity: 1;
+}
+
+.logo {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.logo img {
+    height: 100px;
+    border: 1px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-toggler {
+
+}
+
+.navbar-toggler-icon {
+    border: 1px solid black;
+    color: white;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre {
+    text-align: center;
+}
+
+.hotel {
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 0px) {
+    #Panier {
+        position: fixed;
+        top: 1%;
+        left:1%;
+        z-index: 3;
+        opacity: 1;
+    }
+    #header:hover {
+        opacity: 1;
+    }
+    #reserv { 
+        position: fixed;
+        top: 1%;
+        right:1%;
+        z-index: 3;
+        opacity: 1;
+    }
+    #langage {
+        position: fixed;
+        top: 8%;
+        right:2%;
+        z-index: 3;
+        opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 763px) {
+    #langage {
+        position: fixed;
+        top: 8%;
+        right:2%;
+        z-index: 3;
+        opacity: 1;
+    }
+    #Panier {
+        position: fixed;
+        top: 1%;
+        left:20%;
+        z-index: 3;
+        opacity: 1;
+    }
+  }
+
+/*Index*/
+
+#index-container, #index-nav, #chambres-nav {
+    background-color: #01344c;
+    color:white;
+}
+
+.etoile {
+    color: #d4a22f;
+    font-size: 1em;
+}
+
+.langage {
+    border: 1px solid black;
+}
+
+.zone1, .zone2, .zone3 {
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.zone2 img {
+    /*width: 30px;*/
+}
+
+
+#nav {
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    font-size: 25px;
+}
+
+.menu {
+    color: white;
+    list-style-type: none;
+    font-size: 1em;
+}
+
+/* lien survolé par le curseur */
+a:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+
+/**  Carousel **/
+#carouselExampleIndicators {maring:0}
+
+/**  Carousel **/
+
+
+/**  Coeur du site **/
+
+h1 {
+    color: #d4a22f;
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #d4a22f;
+}
+
+h2 {
+    color: #d4a22f;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+        text-align: center;
+}
+
+.bouton1 {
+    color: #d4a22f;
+    margin: 0 auto;
+    padding: 12px 25px;
+    border: 1px solid #d5bc79;
+    font-size: 0.8em;
+    text-align: center;
+    background: #ffffff;
+}
+
+.bouton1:hover {
+    background-color: #d4a22f;
+    margin: 0 auto;
+    padding: 12px 25px;
+    border: 1px solid #d5bc79;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.bouton2 {
+    background-color: rgb(2, 3, 29);
+    color: rgb(233, 192, 104);
+    box-shadow: 6.5px 11.258px 43px 0px rgba(0, 0, 0, 0.17);
+    font-size: 1em;
+    padding: 24px 43px;
+    margin: 0 auto;
+}
+
+.bouton2:hover {
+    background-color: #d4a22f;
+    margin: 0 auto;
+    padding: 24px 43px;
+    border: 1px solid #d5bc79;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.col {
+    border: solid 1px black;       
+     text-align: center;
+
+ 
+}
+
+
+.presentation p {
+    padding-top: 25px
+}
+
+.main {
+    border: 1px black solid;
+    text-align: center  ;
+}
+/**
+.main img {
+    max-width: 80%;
+   
+}
+
+
+.fadin-bott {
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.5s ease-in-out;
+}
+
+.fadin-bott {
+    transform: translate(0px, 50px);
+}
+
+
+/**  FOOTER **/
+/* footer text  */
+footer {
+    background-color: #01344c;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+
+i {padding-left: 15px;}
+span {padding-left: 15px;}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* lien survolé par le curseur */
+#footer a:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+#footer ul {
+    padding: 0;
+}
+
+
+
+
+/*Chambres*/
+
+#who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
+    color: white;
+}
+
+.my-2 {
+    text-align: center;
+}
+
+/* Panier */ 
+.heading {color:black;
+    font-family: 'Playfair Display', serif;
+text-align: center;}
+
+/* Réservation */ 
+
+#reservation {padding-left: 5px;
+    font-family: 'Playfair Display', serif;
+
+}
