@@ -503,3 +503,12 @@ footer a:hover {
 footer ul {
     padding: 0;
 }
+
+.small {
+    font-size: 0.6em;
+}
+
+.prix {
+    font-style: italic;
+    font-size: 1.4em;
+}
