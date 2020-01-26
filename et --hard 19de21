@@ -1,0 +1,251 @@
+[33mcommit 19de21024005d3203f5b06b2dd40d766a978e4eb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sat Jan 25 16:24:34 2020 +0100
+
+    li ul
+
+[33mcommit af42231f01ec91aceefcb9dbb2c12be603c25609[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Thu Jan 23 23:43:56 2020 +0100
+
+    liens nav et footer
+
+[33mcommit 58b4e1863c8f205628d7fedd3b1e1674c8eff426[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Tue Jan 21 22:09:41 2020 +0100
+
+    photo alignées
+
+[33mcommit ec4e7d2bd6888c52ec0ddf132e07f64a4235d1f0[m
+Author: Mikaïdou M'bo <mikaidoumbp@hotmail.fr>
+Date:   Tue Jan 21 17:04:46 2020 +0100
+
+    photo gallery
+
+[33mcommit 294dc9e55ccc438e9a4b2c99cef5e1572ff95d10[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Mon Jan 20 23:17:34 2020 +0100
+
+    restaurant.html: menu: collabsibles
+
+[33mcommit b2abeaae6568e3839476055d0337da3a17518dc4[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Mon Jan 20 22:41:46 2020 +0100
+
+    fixed navbar in restaurant.html
+
+[33mcommit 1ea0dd0cf54370c610968d1bb577e059d4102014[m
+Merge: 1317fe1 02aabb6
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Mon Jan 20 22:41:07 2020 +0100
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       html/restaurant-cartes.html
+    #       html/restaurant.html
+
+[33mcommit 1317fe165f0d87b4b3e01f0e0cfa9453c55a6438[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Mon Jan 20 22:40:06 2020 +0100
+
+    fixed navbar up on all html files
+
+[33mcommit 02aabb69675eca3fd4f484ce816ddb7cfff98013[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Mon Jan 20 22:38:35 2020 +0100
+
+    collapse
+
+[33mcommit aeac9d9fef39e0246018cfb344df30a719c72d6d[m
+Merge: fae8660 78f687b
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Mon Jan 20 21:49:40 2020 +0100
+
+    Merge branch 'master' of https://github.com/Micky92100/Hotelcop
+
+[33mcommit 78f687b306e4982236b5262a756e95c15df3ad7b[m
+Author: Mikaïdou M'bo <mikaidoumbp@hotmail.fr>
+Date:   Mon Jan 20 17:39:29 2020 +0100
+
+    cartes menu
+
+[33mcommit 955f03758627869efa809224e33c8136ba00fd7c[m
+Merge: ffd8936 09ce06d
+Author: Mikaïdou M'bo <mikaidoumbp@hotmail.fr>
+Date:   Mon Jan 20 17:33:36 2020 +0100
+
+    Merge branch 'master' of https://github.com/Micky92100/Hotelcop
+
+[33mcommit ffd89362493ce4ea1c0686c92deea7d9c9c246bb[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 20:37:51 2020 +0100
+
+    "cartes restaurant"
+
+[33mcommit fae86608cd860ede6e005ebb2e3a8c147e233341[m
+Merge: 23d8497 09ce06d
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sun Jan 19 21:59:49 2020 +0100
+
+    'nav bar'Merge branch 'master' of https://github.com/Micky92100/Hotelcop
+
+[33mcommit 09ce06dae637ca5d1f985ca95522ffb4a9d86b7d[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 20:37:51 2020 +0100
+
+    updated the template.html
+
+[33mcommit 8401269fb2fc976b1b35aecf68da5b16cf615a91[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 20:26:08 2020 +0100
+
+    did the validation thing for reservations
+
+[33mcommit 02adcf47cfe572f9f377c6a4cb423b71c19da88c[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 18:39:49 2020 +0100
+
+    played around with jquery
+
+[33mcommit 23d8497f38cd085ca1995effce4e02b5ef39c8cc[m
+Merge: 7711a6b 401597d
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sun Jan 19 17:48:42 2020 +0100
+
+    okMerge branch 'master' of https://github.com/Micky92100/Hotelcop
+
+[33mcommit 401597d4aead160aa9c4f707eda0978340a19434[m[33m ([m[1;31morigin/alex[m[33m)[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 17:39:37 2020 +0100
+
+    merge manuel effectué
+
+[33mcommit 7d213a47139dd2f1bb678d8e306523a4e454a2d5[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 17:17:29 2020 +0100
+
+    merge manuel effectué
+
+[33mcommit de69fcc5b5c6a2189629ed94fe2c71e7d59fc4c5[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 16:42:33 2020 +0100
+
+    started manual merge
+
+[33mcommit 13ec631cd8c5ed4dedb061a823da1f9dea92b17e[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 15:43:47 2020 +0100
+
+    code inspection and minor fixes
+
+[33mcommit 24f7273ae0b4b11353455a2d70d487271c33f11a[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 15:36:45 2020 +0100
+
+    reworked the folder structure
+
+[33mcommit ba91bef76f16264a567bed38c3301ea105bf8421[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Sun Jan 19 15:29:37 2020 +0100
+
+    minor fixes to restaurant.html. Created template.html to facilitate new page creation. Added minor fixes to both footer and header, and implemented them in all pages so far.
+
+[33mcommit 7711a6b45d453a3260fb532d4d90a0845f4822d4[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sun Jan 19 15:08:23 2020 +0100
+
+    photos et titres
+
+[33mcommit 561ec599f9691fcbab0cb8e46d1daccb37ba8ff3[m
+Merge: 7b8ca30 c03b161
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sun Jan 19 12:45:26 2020 +0100
+
+    "start of restaurant.html"Merge branch 'master' of https://github.com/Micky92100/Hotelcop
+
+[33mcommit 7b8ca303e57b0ee2ad3195ca889693681fad0ef1[m
+Author: Mikaïdou M'Bo <mikaidoumbo@hotmail.fr>
+Date:   Sun Jan 19 12:40:33 2020 +0100
+
+    initial commit
+
+[33mcommit c03b161e2bd54cdae3a54ed5437e1e81cf7664b6[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 23:43:23 2020 +0100
+
+    added cahier des charges
+
+[33mcommit 7177b793d3839addd87f81b04e91b5bfc2373ab5[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 23:39:51 2020 +0100
+
+    responsive, typos, suite royale, justify, centered divs
+
+[33mcommit 22e4d7e29c7ca58b05a972b128e56228aff4a90d[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 23:30:08 2020 +0100
+
+    responsive, typos, suite royale, justify, centered divs
+
+[33mcommit aa66130decf16d2da1abb61c07da9c59991dfdbb[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 22:46:54 2020 +0100
+
+    fixed some more stuff again again again
+
+[33mcommit 9eb04101450324500f225902dd5ef32c92d55971[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 22:46:07 2020 +0100
+
+    fixed some more stuff again again
+
+[33mcommit a125d62cf8292f687c764cb5938cc6b3c02307ca[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 22:14:02 2020 +0100
+
+    fixed some more stuff again
+
+[33mcommit e5aaa8544b264282f4cf4a5093f74874ad5f4c69[m
+Author: Mikaïdou M'bo <mikaidoumbp@hotmail.fr>
+Date:   Fri Jan 17 17:10:34 2020 +0100
+
+    17h10
+
+[33mcommit 095e29504531c83eed5f49b633d253412f13281d[m
+Author: Mikaïdou M'bo <mikaidoumbp@hotmail.fr>
+Date:   Fri Jan 17 17:09:30 2020 +0100
+
+    17h09
+
+[33mcommit 333b4087f09fb4869dc480c5a11b067899176696[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Fri Jan 17 00:06:42 2020 +0100
+
+    fixed some more stuff
+
+[33mcommit 00e3873358b66669aba0d483f883774d6967e384[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Thu Jan 16 23:47:14 2020 +0100
+
+    fixed some stuff
+
+[33mcommit 3bf983c2a7a35aa71f73d3375b207c47d89c5479[m
+Author: Alexis DRAI <drai.alexis@gmail.com>
+Date:   Thu Jan 16 23:00:15 2020 +0100
+
+    added images
+
+[33mcommit 7901ebbba676fbbf1d5985f4a1b5144c744c6582[m
+Author: Micky92100 <mikaidoumbo@hotmail.fr>
+Date:   Thu Jan 16 22:43:03 2020 +0100
+
+    1
+    
+    2
+
+[33mcommit 8ce7e1ccf42d8a98678f8d008e506b4563665b08[m
+Author: Micky92100 <mikaidoumbo@hotmail.fr>
+Date:   Wed Jan 15 11:16:22 2020 +0100
+
+    Initial commit

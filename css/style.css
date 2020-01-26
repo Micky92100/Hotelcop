@@ -189,8 +189,8 @@ a:hover {
 
 
 .my-2 {
-    margin: 50px;
-    text-align: center;
+  
+    
 }
 
 .my-3 {
@@ -293,6 +293,10 @@ h2 {
     padding-top: 25px
 }
 
+li {
+    list-style-type: circle;
+  }
+
 /*???*/
 /*.main {
     border: 1px black solid;
@@ -334,7 +338,9 @@ h2 {
 #who, .dropdown-menu, .nav-link, .dropdown-toggle, .lang-choice {
     color: white;
 }
-
+.line{
+    line-height: 2;
+}
 
 /* Panier */
 .heading {
@@ -350,6 +356,7 @@ h2 {
 
 .col {
     text-align: center;
+    margin-top: 50px;
 }
 
 .chambres-classe {
@@ -471,7 +478,6 @@ footer {
 
 ul {
     list-style-type: none;
-    color: white;
     font-size: 15px;
 
 }
