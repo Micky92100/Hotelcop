@@ -1,434 +1,286 @@
 <!doctype html>
 <html lang="fr">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site abdelhafid et Mikaïdou">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <!--    TODO ajouter titre  -->
-    <title>Hôtel COP</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Site abdelhafid et Mikaïdou">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <!--    TODO ajouter titre  -->
+        <title>Hôtel COP</title>
+    </head>
 
-<body id="haut">
+    <body id="haut">
 
-    <!-- les éléments en position fixed dans la page-->
-    <button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1"
-        id="panier-pre-nav">
-        Panier
-    </button>
-    <div id="langage">
-        <a target="_blank" rel="external nofollow" href="#">
-            <img alt="traduire en français" class="img-responsive img-rounded"
-                src="../img/shared/france-flag-icon-16.png"></a>
-        <a target="_blank" rel="external nofollow" href="#">
-            <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
-    </div>
-    <button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
-        id="reserv">
-        Réservation
-    </button>
+        <!--Drapeaux en position fixed-->
+        <div id="langage">
+            <a target="_blank" rel="external nofollow" href="#">
+                <img alt="traduire en français" class="img-responsive img-rounded"
+                    src="../img/shared/france-flag-icon-16.png"></a>
+            <a target="_blank" rel="external nofollow" href="#">
+                <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
+        </div>
+        <!--Nav bar-->
 
-    <!--Nav bar-->
-
-    <header id="header">
-        <div class="nav container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-2 logo">
-                    <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
+        <header id="header">
+            <div class="nav container-fluid pa">
+                <div class="row logo2">
+                    <div class="col-8 col-md-2 logo">
+                        <a href="index.html"><img src="../img/shared/logo.png" class="img-responsive img-rounded"
+                                                  alt="logo de l'hôtel"></a>
+                    </div>
                 </div>
+                <div class="col-md-10 titre">
+                    <h2 class="hotel">HôtelCOP</h2>
+                    <i class="fas fa-star etoile"></i>
+                    <i class="fas fa-star etoile"></i>
+                    <i class="fas fa-star etoile"></i>
+                    <i class="fas fa-star etoile"></i>
+                    <i class="fas fa-star etoile"></i>
+                </div>
+            </div>
+            <div id="index-container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <nav class="navbar navbar-expand-md">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                <!-- Votre panier en modal -->
-
-                <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true" data-backdrop="false">
-                    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h3 class="heading">Votre séjour
-                                </h3>
-
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" class="white-text">&times;</span>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group heading">
-                                            <label>Montant du séjour: </label>
-                                            <span class="result btn btn-primary">0</span>
-                                            <span>€</span>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item ">
+                                        <a class="nav-link menu" href="index.html">Accueil</a>
+                                    </li>
+                                    <li class="nav-item dropdown menu">
+                                        <a class="nav-link dropdown-toggle menu" href="index.html"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            role="button">l'hôtel</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="hotel.html">Qui sommes-nous ?</a>
+                                            <a class="dropdown-item" href="actualite.html">Actualités</a>
+                                            <a class="dropdown-item" href="accès.html">Accès</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                            <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                                            <a class="dropdown-item" href="evenements.html">Evenements</a>
+                                            <a class="dropdown-item" href="press.html">Press</a>
                                         </div>
-                                    </div>
-                                    <div class="col-12 heading">
-                                        <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour
-                                            ou à
-                                            nous contacter pour plus d'informations </p>
-                                    </div>
-                                </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu">
+                                        <a class="nav-link dropdown-toggle menu navbardrop" href="chambres.html"
+                                            data-toggle="dropdown">
+                                            Chambres & Suites
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="chambres.html#Chambresclassiques">Chambre
+                                                Classique</a>
+                                            <a class="dropdown-item" href="chambres.html#Chambresconfort">Chambre
+                                                Confort</a>
+                                            <a class="dropdown-item" href="chambres.html#Chambresdeluxe">Chambre
+                                                Deluxe</a>
+                                            <a class="dropdown-item" href="chambres.html#suiteroyale">Chambre Suite</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu">
+                                        <a class="nav-link dropdown-toggle menu navbardrop" href="restaurant.html"
+                                            data-toggle="dropdown">
+                                            Restaurant
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="restaurant.html#horaires">Carte
+                                                Brasserie</a>
+                                            <a class="dropdown-item" href="restaurant.html#horaires">Carte
+                                                Dégustation</a>
+                                            <a class="dropdown-item" href="restaurant.html#horaires ">Carte
+                                                Restaurant</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle menu navbardrop" href="spa.html"
+                                            data-toggle="dropdown">
+                                            Spa
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="spa.html#detente">Spa Détente</a>
+                                            <a class="dropdown-item" href="spa.html#decouverte">Spa Découverte</a>
+                                            <a class="dropdown-item" href="spa.html#relaxant">Spa Relaxant</a>
+                                            <a class="dropdown-item" href="spa.html#evasion">Spa Evasion</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link menu" href="avis.html">Avis</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link menu" href="reservation.html">Réservation</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link menu" href="panier.html">Panier</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline" id="search">
+                                    <input class="form-control mr-sm-2" name="search"
+                                        placeholder="Rechercher dans le site" aria-label="Search" required>
+                                    <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
+                                </form>
                             </div>
-                            <div class="modal-footer justify-content-center">
-                                <a type="button" class="btn btn-info" data-toggle="modal"
-                                    data-target="#reservation">Réserver</a>
-                                <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
-                            </div>
-                        </div>
-
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-10 titre">
-                <h2 class="hotel">HôtelCOP</h2>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-                <i class="fas fa-star etoile"></i>
-            </div>
-        </div>
-        <!-- Fin panier modal -->
-        <div id="index-container">
+        </header>
+
+        <!--Coeur de la page-->
+
+
+
+        <!-- Fin de modal -->
+        <!--Carousel-->
+        <div class="container-fluid" id="horaires">
             <div class="row">
-                <div class="col-12 col-md-12">
-                    <nav class="navbar navbar-expand-md">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <!--TODO : hamburger!-->
-                            <span class="navbar-toggler-icon">Menu</span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item ">
-                                    <a class="nav-link menu" href="#">Accueil</a>
-                                </li>
-                                <li class="nav-item dropdown menu">
-                                    <a class="nav-link dropdown-toggle menu" href="#" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Qui sommes-nous ?</a>
-                                        <a class="dropdown-item" href="#">Actualités</a>
-                                        <a class="dropdown-item" href="#">Accès</a>
-                                        <a class="dropdown-item" href="#">Contact</a>
-                                        <a class="dropdown-item" href="#">Recrutement</a>
-                                        <a class="dropdown-item" href="#">Evenements</a>
-                                        <a class="dropdown-item" href="#">Press</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown menu">
-                                    <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
-                                        Chambres & Suites
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="chambres.html">Chambre Classique</a>
-                                        <a class="dropdown-item" href="chambres.html">Chambre Confort</a>
-                                        <a class="dropdown-item" href="chambres.html">Chambre Deluxe</a>
-                                        <a class="dropdown-item" href="chambres.html">Chambre Suite</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
-                                        Spa
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Spa Détente</a>
-                                        <a class="dropdown-item" href="#">Spa Découverte</a>
-                                        <a class="dropdown-item" href="#">Spa Relaxant</a>
-                                        <a class="dropdown-item" href="#">Spa Evasion</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link menu" href="#">Avis</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline" id="search-form">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
-                                    aria-label="Search" required>
-                                <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
-                            </form>
+                <div
+                    class="col-12 my-3 mt-2 border-top border-bottom border-dark my-4 text-center bg-light calage my-3 mt-2">
+                    <h1>Notre restaurant gastronomique</h1>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 mb-6 mt-2 presentation">
+                            <h4>Le mot du Chef</h4>
+                            <p>L 'Amour sera toujours mon ingrédient préféré . . . </p>
+
+                            <p>" L'Amour du travail bien fait..."</p><br>
+
+                            Chaque matin, se joue une agréable musique en cuisine, avec le ballet des arrivages de
+                            produits frais tout juste sélectionnés par notre chef, d'une fraîcheur et d'une qualité
+                            remarquable. L'inspiration se met en place inéluctablement pour la création de nouvelles
+                            combinaisons de saveurs équilibrées.<br>
+
+                            Je crois en ce juste dicton qui dit : " vous êtes ce que vous mangez".<br>
+
+                            Conscient que se joue là un rôle majeur au bien-être de chacun, la santé étant notre bien le
+                            plus précieux, je mets un point d'honneur à ce que chaque met soit élaboré de la manière la
+                            plus légère et équilibrée possible en gardant lors de la cuisson toutes les vitamines
+                            fondamentales au bon fonctionnement de notre organisme. Ainsi les convives de mon restaurant
+                            peuvent bénéficier au mieux de ce médicament naturel.<br>
+
+                            La Nature est source de bienfait. Je ne suis là que pour les sublimer.<br>
+
+                            Ce beau pays qu'est La France, détient une quantité incroyable de variétés de bons produits,
+                            avec la richesse du sol et ses terres si fertiles, la pêche et les agriculteurs que je salue
+                            pour leur bravoure, et qui nous permettent un voyage culinaire envié du monde entier.<br>
+
+                            Tous ces acteurs anonymes participent à ces instants magiques et donnent l'envie à notre
+                            équipe de dresser quotidiennement des tableaux gustatifs. La cuisine est un Art qui se
+                            partage dans la convivialité.<br>
+
+                            Le principal ingrédient d'une bonne cuisine est l'amour; l'amour et le respect envers ceux
+                            pour qui vous cuisinez. "<br>
+
+
+                            <p>Chef Diallo</p>
+
                         </div>
-                    </nav>
+                        <div class="col-md-12 col-lg-6 mb-6 mt-2 main">
+                            <img class="img-fluid img-fluid img-thumbnail"
+                                src="http://www.envoleesgourmandes.com/wp-content/uploads/2018/07/Le-Chef-Anto.png"
+                                width="70%" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+        <hr>
+        <!--Contenu-->
 
-    <!--Réservation en modal -->
+        <section class="container-fluid">
 
-    <div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="heading">Votre réservation </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+            <section class="container-fluid bloc mt-3">
+
+                <div class="row">
+                    <div class="col-12 presentation">
+                        <h3>Envie de partager une expérience inoubliable
+                        </h3>
+                        <h2 class="my-2">Réserver votre table.</h2>
+                        <div class="col">
+                            <a href="reservation.html" class="btn bouton2">
+                                Réserver
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="container-fluid">
-                    <form class="row form-group" id="reservation-form">
-                        <!--                    0-->
-                        <div class="col-12">
-                            <label for="datepicker">Date d'arrivée : </label>
-                            <input type="date" id="datepicker" class="res">
-                        </div>
-                        <!--                    1-->
-                        <div class="col-12">
-                            <label for="chambre">Choisissez votre chambre : </label>
-                            <select class="res" id="chambre" name="chambre" onchange="calcul()">
-                                <option selected value="0"></option>
-                                <option value="classique">Classique</option>
-                                <option value="confort">Confort</option>
-                                <option value="deluxe">Deluxe</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                        </div>
-                        <!--                    2-->
-                        <div class="col-12">
-                            <label for="nuit">Nombre de nuits : </label>
-                            <select class="res" id="nuit" name="nuit" onchange="calcul()">
-                                <script>
-                                    for (let i = 0; i <= 31; i++) {
-                                        if (i === 0) {
-                                            document.write('<option value="0"></option>')
-                                        } else {
-                                            document.write('<option value="' + i + '">' + i + '</option>');
-                                        }
-                                    }
-                                </script>
-                            </select>
-                        </div>
-                        <!--                    3-->
-                        <div class="col-12">
-                            <label for="personne">Nombre de personnes : </label>
-                            <select class="res" id="personne" name="personne" onchange="calcul()">
-                                <option value="0"></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </div>
-                        <!--                    4-->
-                        <div class="col-12">
-                            <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
-                            <select class="res" id="restauration" name="restaurant" onchange="calcul()">
-                                <option value="0" selected></option>
-                                <option value="oui">Oui</option>
-                                <option value="non">Non</option>
-                            </select><br>
-                        </div>
-                        <div class="col-12">
-                            <label>Montant du séjour: </label>
-                            <span class="result btn btn-primary">0</span>
-                            <span>€</span>
-                        </div>
-                        <div class="col-12">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-                                <input type="submit" class="btn btn-info" value="Reserver">
+            </section>
+
+            <div class="presentation-carte">
+                <hr>
+                <p>Troisième signature gastronomique de l'Hotelcop,
+                    L’Orangerie, récompensé d’une étoile au Guide Michelin,
+                    offre une nouvelle expérience culinaire au coeur
+                    du Palace. Dans cet écrin intimisite,
+                    la cuisine laisse la part belle aux végétaux,
+                    aux produits laitiers et aux produits de la mer.
+                    Une partition culinaire résolument tournée vers
+                    la gastronomie de demain, légère, équilibrée
+                    et féminine.</p>
+                <hr>
+            </div>
+
+
+
+
+
+            <div id="horaires-restaurants">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid img-thumbnail" src="../img/restaurant/salle1.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid img-thumbnail"
+                                    src="../img/restaurant/restaurant.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid img-thumbnail"
+                                    src="../img/restaurant/restaurant1.jpg" alt="Third slide">
                             </div>
                         </div>
-                    </form>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="col"></div>
+                    <p>Petit déjeuner <span>8h30 - 10h30</span></p>
+                    <p>Déjeuner <span>12h30 - 14h30</span></p>
+                    <p>Diner <span>19h - 22h30 </span></p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Fin de modal -->
-
-    <!--Coeur de la page-->
-
-
-
-    <!-- Fin de modal -->
-    <!--Carousel-->
-    <div class="container-fluid">
-        <div class="restaurant-title">
-            <h2>Restaurant Hotelcop</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-12 my-3 mt-2">
-                <h1>Notre restaurant gastronomique</h1>
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 mb-6 mt-2 presentation">
-                        <h4>Le mot du Chef</h4>
-                        <p>L 'Amour sera toujours mon ingrédient préféré . . . </p>
- 
-                            <p>" L'Amour du travail bien fait..."</p><br>
-                            
-                            Chaque matin, se joue une agréable musique en cuisine, avec le ballet des arrivages de produits frais tout juste sélectionnés par notre chef, d'une fraîcheur et d'une qualité remarquable. L'inspiration se met en place inéluctablement pour la création de nouvelles combinaisons de saveurs équilibrées.<br>
-                    
-                            Je crois en ce juste dicton qui dit : " vous êtes ce que vous mangez".<br>
-                            
-                            Conscient que se joue là un rôle majeur au bien-être de chacun, la santé étant notre bien le plus précieux, je mets un point d'honneur à ce que chaque met soit élaboré de la manière la plus légère et équilibrée possible en gardant lors de la cuisson toutes les vitamines fondamentales au bon fonctionnement de notre organisme. Ainsi les convives de mon restaurant peuvent bénéficier au mieux de ce médicament naturel.<br>
-                            
-                            La Nature est source de bienfait. Je ne suis là que pour les sublimer.<br>
-                            
-                            Ce beau pays qu'est La France, détient une quantité incroyable de variétés de bons produits, avec la richesse du sol et ses terres si fertiles, la pêche et les agriculteurs que je salue pour leur bravoure, et qui nous permettent un voyage culinaire envié du monde entier.<br>
-                            
-                            Tous ces acteurs anonymes participent à ces instants magiques et donnent l'envie à notre équipe de dresser quotidiennement des tableaux gustatifs. La cuisine est un Art qui se partage dans la convivialité.<br>
-                           
-                            Le principal ingrédient d'une bonne cuisine est l'amour; l'amour et le respect envers ceux pour qui vous cuisinez. "<br>
-
-                           
-                            <p>Chef Diallo</p> 
-                        
-                    </div>
-                    <div class="col-md-12 col-lg-6 mb-6 mt-2 main">
-                        <img class="img-fluid" src="http://www.envoleesgourmandes.com/wp-content/uploads/2018/07/Le-Chef-Anto.png"
-                             width="70%" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   <hr>
-    <!--Contenu-->
-
-    <section class="container-fluid">
-
-        <div class="appel-nous">
-            <p id="p01">Appelez-nous pour reserver +33-78-85-69-27-86</p>
-            <button class="btn bouton2-appel bouton2-appel:hover" id="btn1">
-                Reserver
-            </button>
-
-        </div>
-
-
-        <div class="presentation-carte">
             <hr>
-            <p>Troisième signature gastronomique de l'Hotelcop,
-                L’Orangerie, récompensé d’une étoile au Guide Michelin,
-                offre une nouvelle expérience culinaire au coeur
-                du Palace. Dans cet écrin intimisite,
-                la cuisine laisse la part belle aux végétaux,
-                aux produits laitiers et aux produits de la mer.
-                Une partition culinaire résolument tournée vers
-                la gastronomie de demain, légère, équilibrée
-                et féminine.</p>
-            <hr>
-        </div>
-<!-- 
-        <div class="carousel-item">
-            <img src="..." alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              
-            </div>
-          </div> -->
-
-
-       
-
-
-        <div id="horaires-restaurants">
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="../img/restaurant/salle1.jpg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../img/restaurant/restaurant.jpg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../img/restaurant/restaurant1.jpg" alt="Third slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                
-                <div class="col"></div>
-                <p>Petit déjeuner <span>8h30 - 10h30</span></p>
-                <p>Déjeuner <span>12h30 - 14h30</span></p>
-                <p>Diner <span>19h - 22h30 </span></p>
-            </div>
-        </div>
-      <hr>
-      
-        <div class="container-fluid">
-            <div class="wrapper">
-                <div class="row">
-                    
-                    <div class="col-xs-3 offset-2">
-                        <a href="img/image2.jpg" class="thumbnail">
-                            <img src="../img/restaurant/assiette6.jpg" alt="Image 2" />
-                        </a>
-                    </div>
-
-
-                    <div class="col-xs-3 offset-1">
-                        <a href="img/image2.jpg" class="thumbnail">
-                            <img src="../img/restaurant/assiette1(2).jpg" alt="Image 2" />
-                        </a>
-                    </div>
-                    <div class="col-xs-3 offset-1">
-                        <a href="images/image4.jpg" class="thumbnail">
-                            <img src="../img/restaurant/f.jpg" alt="Image 4" />
-                        </a>
-                    </div>
-                    <div class="col-xs-3 offset-1">
-                        <a href="images/image4.jpg" class="thumbnail">
-                            <img src="../img/restaurant/assiette1(1).jpg" alt="Image 4" />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-3 offset-3">
-                        <a href="images/image4.jpg" class="thumbnail">
-                            <img src="../img/restaurant/e.jpg" alt="Image 4" />
-                        </a>
-                    </div>
-                    <div class="  col-xs-3 offset-1">
-                        <a href="images/image4.jpg" class="thumbnail">
-                            <img src="../img/restaurant/a.jpg" alt="Image 4" />
-                        </a>
-                    </div>
-                    <div class="col-xs-3 offset-1">
-                        <a href="images/image4.jpg" class="thumbnail">
-                            <img src="../img/restaurant/c.jpg" alt="Image 4" />
-                        </a>
-                    </div>
-                    <div class="col-xs-3 offset-1">
-                        <a href="images/image3.jpg" class="thumbnail">
-                            <img src="../img/restaurant/pavé.jpg" alt="Image 3" />
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="container mt-3 col-8">
+            <div class="container mt-3 col-8 mb-3 mt-2 align-items-center">
+                <h2 class=" font-weight-light text-center text-lg-left mt-4 mb-0 bloc presentation">Nos cartes
+                </h2>
                 <div class="cartes">
                     <div class="btn-cl">
-                        <button class="btn bouton2" id="btn1" data-toggle="collapse" data-target="#carte1">
+                        <button class="btn bouton2 mt-4 mb-3" id="btn1" data-toggle="collapse" data-target="#carte1">
                             Carte Brasserie
                         </button>
-                        <button class="btn bouton2" id="btn2" data-toggle="collapse" data-target="#carte2">
+                        <button class="btn bouton2 mt-4 mb-3" id="btn2" data-toggle="collapse" data-target="#carte2">
                             Carte Dégustation
                         </button>
-                        <button class="btn bouton2" id="btn3" data-toggle="collapse" data-target="#carte3">
+                        <button class="btn bouton2 mt-4 mb-3" id="btn3" data-toggle="collapse" data-target="#carte3">
                             Carte Restaurant
                         </button>
                     </div>
@@ -503,112 +355,209 @@
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="container">
 
-    </section>
+                <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0 bloc">Nos plats en image...</h2>
 
+                <hr class="mt-2 mb-5">
 
-    <!--Modal -->
+                <div class="row text-center text-lg-left zoom">
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Vous souhaitez vous inscrire à la newsletter ?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                    <button type="button" class="btn btn-primary">Oui</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Footer-->
+                    <div class="col-lg-3 col-md-4 col-6 im">
 
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <h4>Menu</h4>
-                <div class="row">
-                    <div class="col-md-5">
-                        <ul>
-                            <li><a href="#">Nos chambres</a></li>
-                            <li><a href="#">Nos Psa</a></li>
-                            <li><a href="#">Nos restaurants</a></li>
-                            <li><a href="#">Accès</a></li>
-                        </ul>
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/assiette2.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
                     </div>
-                    <div class="col-md-5">
-                        <ul class="list">
-                            <li><a href="#">Qui sommes-nous?</a></li>
-                            <li><a href="#">Mentions légales</a></li>
-                            <li><a href="#">Plan du site</a></li>
-                        </ul>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/assiette3.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/assiette4.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/f.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/assiette1(2).jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/f.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/assiette1(2).jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/e.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/f.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/e.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/f.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 im">
+
+                        <img class="img-fluid img-thumbnail ma-classe" src="../img/restaurant/e.jpg"
+                            alt="image de l'hôtel Cop PARIS">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="container-fluid bloc mt-3">
+
+            <div class="row">
+                <div class="col-12 presentation">
+                    <h3>Vous avez envie de profiter de notre restaurant....
+                    </h3>
+                    <h2 class="my-2">Réserver votre table.</h2>
+                    <div class="col">
+                        <a href="reservation.html" class="btn bouton2">
+                            Réserver
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <h4>Nous suivre</h4>
-                <ul>
-                    <li>
-                        <a target="_blank" rel="external nofollow" href="#">
-                            <i class="fab fa-facebook-square" title="Facebook"></i>Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="#" rel="external nofollow">
-                            <i class="fab fa-twitter-square" title="Twitter"></i>Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel="external nofollow" href="#">
-                            <i class="fab fa-linkedin" title="Linkedin"></i>Linkedin
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel="external nofollow" href="#">
-                            <i class="fab fa-google-plus-square" title="Google+"></i>Google+
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-envelope-square" title="Envoyer par mail"></i>Nous écrire
-                        </a>
-                    </li>
-                </ul>
+        </section>
+
+        <!--Footer-->
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-4 bas">
+
+                    <ul>
+                        <li><a href="chambres.html">Nos chambres</a></li>
+                        <li><a href="psa.html">Notre Psa</a></li>
+                        <li><a href="restaurant.html">Notre restaurants</a></li>
+                        <li><a href="accès.html">Accès</a></li>
+                        <a href="JavaScript:window.print()">Imprimer</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 bas">
+                    <ul class="list">
+                        <li><a href="hotel.html">Qui sommes-nous?</a></li>
+                        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                        <li><a href="plandusite.html">Plan du site</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="CGV.html">CGV</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-12 col-md-4 bas ">
+                    <form action="#" method="post" id="newsletter" class="form-horizontal">
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-6">
+                                <input type="text" name="nom" placeholder="Votre nom et prénom" />
+                                <span class="form_error"></span><br />
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <input type="text" name="email" placeholder="Votre mail">
+                                <span class="form_error"></span><br />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-12 col-md-12 pa">
+                                <button type="submit" class="btn btn-primary">Rejoindre notre newsletter</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-12 col-md-5">
-                <h4>Newsletter</h4>
-                <form>
-                    <input type="email" class="form-control" aria-describedby="emailHelp"
-                        placeholder="Saisisez votre mail" required>
-                    <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre
-                        actualité</small>
-                    <button type="submit" class="btn btn-primary">Enregistrer</button>
-                </form>
-            </div>
+        </footer>
+        <!--reseau en position fixed -->
+        <div class="reseau">
+            <ul class="im">
+                <li>
+                    <a target="_blank" rel="external nofollow" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square ma-classe" title="Facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.twitter.com/" rel="external nofollow">
+                        <i class="fab fa-twitter-square ma-classe" title="Twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="external nofollow" href="https://www.linkedin.fr/">
+                        <i class="fab fa-linkedin ma-classe" title="Linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="external nofollow" href="https://www.google+.com">
+                        <i class="fab fa-google-plus-square ma-classe" title="Google+"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.gmail.com">
+                        <i class="fas fa-envelope-square ma-classe" title="Envoyer par mail"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>
 
-    <!-- JS -->
+        <!-- JS -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script src="../js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../js/jquery.validate.min.js"></script>
 
-</body>
+    </body>
 
 </html>

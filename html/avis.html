@@ -1,657 +1,528 @@
 <!doctype html>
 <html lang="fr">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site abdelhafid et Mikaïdou">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Hotelcop PARIS Hôtel de Luxe " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hotelcop-paris.fr" />
+    <meta property="og:site_name" content="Hotelcop" />
+    <meta property="og:description" content="Hotelcop PARIS - hôtel 5 étoiles  parisien unique au monde . " />
+    <meta name="description" content="Présentation de l'hôtelcop 5 étoiles PARIS et de tous ses services." />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Avis</title>
-</head>
-<body id="haut">
 
-<!-- les éléments en position fixed dans la page-->
-<button data-toggle="modal" data-target="#panier" type="button" class="btn btn-outline-primary bouton1"
-        id="panier-pre-nav">
-    Panier
-</button>
-<div id="langage">
-    <a target="_blank" rel="external nofollow" href="#">
+    <title>Hôtel COP</title>
+  </head>
+
+  <body id="haut">
+    <!--Drapeaux en position fixed-->
+    <div id="langage">
+      <a rel="external nofollow" href="#">
         <img alt="traduire en français" class="img-responsive img-rounded" src="../img/shared/france-flag-icon-16.png"></a>
-    <a target="_blank" rel="external nofollow" href="#">
+      <a rel="external nofollow" href="#">
         <img src="../img/shared/united-kingdom-flag-icon-16.png" alt="translate to english"></a>
-</div>
-<button type="button" class="btn btn-outline-primary bouton1" data-toggle="modal" data-target="#reservation"
-        id="reserv">
-    Réservation
-</button>
-
-<!--Nav bar-->
-
-<header id="header">
-    <div class="nav container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-2 logo">
-                <img src="../img/shared/logo.png" class="img-responsive img-rounded" alt="">
-            </div>
-
-            <!-- Votre panier en modal -->
-
-            <div class="modal fade right" id="panier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                 aria-hidden="true" data-backdrop="false">
-                <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <h3 class="heading">Votre séjour
-                            </h3>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="white-text">&times;</span>
-                            </button>
-                        </div>
-
-                        <div class="modal-body">
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group heading">
-                                        <label>Montant du séjour: </label>
-                                        <span class="result btn btn-primary">0</span>
-                                        <span>€</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 heading">
-                                    <p>Pour l'instant votre panier est vide, n'hésitez pas à reserver votre séjour ou à
-                                        nous contacter pour plus d'informations </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <a type="button" class="btn btn-info" data-toggle="modal" data-target="#reservation">Réserver</a>
-                            <a type="button" class="btn btn-info" data-dismiss="modal">Fermer</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-10 titre">
-            <h2 class="hotel">HôtelCOP</h2>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-            <i class="fas fa-star etoile"></i>
-        </div>
     </div>
-    <!-- Fin panier modal -->
-    <div id="index-container">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <!--TODO : hamburger!-->
-                        <span class="navbar-toggler-icon">Menu</span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link menu" href="index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item dropdown menu">
-                                <a class="nav-link dropdown-toggle menu" href="index.html" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
-                                   <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="hotel.html">Qui sommes-nous ?</a>
-                                    <a class="dropdown-item" href="actualités-liens.html">Actualités</a>
-                                    <a class="dropdown-item" href="contact.html">Accès</a>
-                                    <a class="dropdown-item" href="contact.html">Contact</a>
-                                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
-                                    <a class="dropdown-item" href="actualités-video.html">Evenements</a>
-                                    <a class="dropdown-item" href="presse.html">Presse</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown menu">
-                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
-                                    Chambres & Suites
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="chambres.html">Chambre Classique</a>
-                                    <a class="dropdown-item" href="chambres.html">Chambre Confort</a>
-                                    <a class="dropdown-item" href="chambres.html">Chambre Deluxe</a>
-                                    <a class="dropdown-item" href="chambres.html">Chambre Suite</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle menu navbardrop" href="#" data-toggle="dropdown">
-                                    Spa
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Spa Détente</a>
-                                    <a class="dropdown-item" href="#">Spa Découverte</a>
-                                    <a class="dropdown-item" href="#">Spa Relaxant</a>
-                                    <a class="dropdown-item" href="#">Spa Evasion</a>
-                                </div>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link menu" href="#">Avis</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline" id="search-form">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher dans le site"
-                                   aria-label="Search" required>
-                            <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
-                        </form>
-                    </div>
-                </nav>
-            </div>
+    <!--Nav bar-->
+
+    <header id="header">
+      <div class="nav container-fluid pa">
+        <div class="row logo2">
+          <div class="col-8 col-md-2 logo">
+            <a href="index.html"><img src="../img/shared/logo.png" class="img-responsive img-rounded"
+                                      alt="logo de l'hôtel"></a>
+          </div>
         </div>
-    </div>
-</header>
+        <div class="col-md-10 titre">
+          <h2 class="hotel">HôtelCOP</h2>
+          <i class="fas fa-star etoile"></i>
+          <i class="fas fa-star etoile"></i>
+          <i class="fas fa-star etoile"></i>
+          <i class="fas fa-star etoile"></i>
+          <i class="fas fa-star etoile"></i>
+        </div>
+      </div>
+      <div id="index-container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <nav class="navbar navbar-expand-md">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-<!--Réservation en modal -->
-
-<div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="heading">Votre réservation </h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container-fluid">
-                <form class="row form-group" id="reservation-form">
-                    <!--                    0-->
-                    <div class="col-12">
-                        <label for="datepicker">Date d'arrivée : </label>
-                        <input type="date" id="datepicker" class="res">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item dropdown menu">
+                    <a class="nav-link dropdown-toggle menu" href="index.html" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" role="button">l'hôtel</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="hotel.html">Qui sommes-nous ?</a>
+                      <a class="dropdown-item" href="actualite.html">Actualités</a>
+                      <a class="dropdown-item" href="accès.html">Accès</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                      <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                      <a class="dropdown-item" href="evenements.html">Evenements</a>
+                      <a class="dropdown-item" href="press.html">Press</a>
                     </div>
-                    <!--                    1-->
-                    <div class="col-12">
-                        <label for="chambre">Choisissez votre chambre : </label>
-                        <select class="res" id="chambre" name="chambre" onchange="calcul()">
-                            <option selected value="0"></option>
-                            <option value="classique">Classique</option>
-                            <option value="confort">Confort</option>
-                            <option value="deluxe">Deluxe</option>
-                            <option value="suite">Suite</option>
-                        </select>
+                  </li>
+                  <li class="nav-item dropdown menu">
+                    <a class="nav-link dropdown-toggle menu navbardrop" href="chambres.html" data-toggle="dropdown">
+                      Chambres & Suites
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="chambres.html#Chambresclassiques">Chambre
+                        Classique</a>
+                      <a class="dropdown-item" href="chambres.html#Chambresconfort">Chambre
+                        Confort</a>
+                      <a class="dropdown-item" href="chambres.html#Chambresdeluxe">Chambre
+                        Deluxe</a>
+                      <a class="dropdown-item" href="chambres.html#suiteroyale">Chambre Suite</a>
                     </div>
-                    <!--                    2-->
-                    <div class="col-12">
-                        <label for="nuit">Nombre de nuits : </label>
-                        <select class="res" id="nuit" name="nuit" onchange="calcul()">
-                            <script>
-                                for (let i = 0; i <= 31; i++) {
-                                    if (i === 0) {
-                                        document.write('<option value="0"></option>')
-                                    } else {
-                                        document.write('<option value="' + i + '">' + i + '</option>');
-                                    }
-                                }
-                            </script>
-                        </select>
+                  </li>
+                  <li class="nav-item dropdown menu">
+                    <a class="nav-link dropdown-toggle menu navbardrop" href="restaurant.html" data-toggle="dropdown">
+                      Restaurant
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="restaurant.html#horaires">Carte
+                        Brasserie</a>
+                      <a class="dropdown-item" href="restaurant.html#horaires">Carte
+                        Dégustation</a>
+                      <a class="dropdown-item" href="restaurant.html#horaires ">Carte
+                        Restaurant</a>
                     </div>
-                    <!--                    3-->
-                    <div class="col-12">
-                        <label for="personne">Nombre de personnes : </label>
-                        <select class="res" id="personne" name="personne" onchange="calcul()">
-                            <option value="0"></option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle menu navbardrop" href="spa.html" data-toggle="dropdown">
+                      Spa
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="spa.html#detente">Spa Détente</a>
+                      <a class="dropdown-item" href="spa.html#decouverte">Spa Découverte</a>
+                      <a class="dropdown-item" href="spa.html#relaxant">Spa Relaxant</a>
+                      <a class="dropdown-item" href="spa.html#evasion">Spa Evasion</a>
                     </div>
-                    <!--                    4-->
-                    <div class="col-12">
-                        <label for="restauration">Souhaitez-vous profiter de nos restaurants ? </label>
-                        <select class="res" id="restauration" name="restaurant" onchange="calcul()">
-                            <option value="0" selected></option>
-                            <option value="oui">Oui</option>
-                            <option value="non">Non</option>
-                        </select><br>
-                    </div>
-                    <div class="col-12">
-                        <label>Montant du séjour: </label>
-                        <span class="result btn btn-primary">0</span>
-                        <span>€</span>
-                    </div>
-                    <div class="col-12">
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
-                            <input type="submit" class="btn btn-info" value="Reserver">
-                        </div>
-                    </div>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="avis.html">Avis</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="reservation.html">Réservation</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="panier.html">Panier</a>
+                  </li>
+                </ul>
+                <form class="form-inline" id="search">
+                  <input class="form-control mr-sm-2" name="search" placeholder="Rechercher dans le site"
+                    aria-label="Search" required>
+                  <button class="btn btn-outline-primary bouton1" type="submit">Recherche</button>
                 </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Coeur de la page avis-->
-
-<div id="main" class="container-fluid">
-
-    <div class="container-fluid" id="avis">
-        <div class="row">
-        <div class="col-12 col-md-6 fondavis">
-        </div>
-        <div class="col-12 col-md-6 actualités text-center">
-        <h2 class="my-4">Les avis</h2>
-        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, sequi explicabo. Possimus, cumque. Iusto ipsa numquam delectus nesciunt veritatis aliquid, vitae a voluptate neque inventore, autem quia repellendus quo atque?</p>
-        </div>
-        </div>
-      </div>
-    </div>
-          
-<div class="container bot">
-<div class="imag2">
-  <div class="text2">Nos chambres</div>
-</div>
-            <div class="row">
-          <div class="col-md-12 text-center  marb-35">
-            <h2 class="header-h">Les derniers avis sur nos chambres</h2>
-            <p  class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                      <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                    </div>
               </div>
-            </div>
-          
-
-            <div class="container bot">
-            <div class="row">
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-            <div class="cont col-6 col-md-3">
-              <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-              <div class="overlay">
-                <div class="text">La chambre était magnifique, Jules LAFONT</div>
-              </div>
-            </div>
-          </div>
- 
-                </div>
-                <div class="container bot">
-                  <div class="imag2">
-                    <div class="text2">Nos restaurants</div>
-                  </div>
-                              <div class="row">
-                            <div class="col-md-12 text-center  marb-35">
-                              <h2 class="header-h">Les derniers avis sur nos chambres</h2>
-                              <p  class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                        <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                                      </div>
-                                </div>
-                              </div>
-                              <div class="container bot">
-           
-              <div class="row">
-              <div class="cont col-6 col-md-3">
-                <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-                <div class="overlay">
-                  <div class="text">La chambre était magnifique, Jules LAFONT</div>
-                </div>
-              </div>
-              <div class="cont col-6 col-md-3">
-                <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-                <div class="overlay">
-                  <div class="text">La chambre était magnifique, Jules LAFONT</div>
-                </div>
-              </div>
-              <div class="cont col-6 col-md-3">
-                <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-                <div class="overlay">
-                  <div class="text">La chambre était magnifique, Jules LAFONT</div>
-                </div>
-              </div>
-              <div class="cont col-6 col-md-3">
-                <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-                <div class="overlay">
-                  <div class="text">La chambre était magnifique, Jules LAFONT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container bot">
-            <div class="imag2">
-              <div class="text2">Nos Spa</div>
-            </div>
-                        <div class="row">
-                      <div class="col-md-12 text-center  marb-35">
-                        <h2 class="header-h">Les derniers avis sur notre Spa</h2>
-                        <p  class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                  <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                                </div>
-                          </div>
-                        </div>
-                        <div class="container bot">
-     
-        <div class="row">
-        <div class="cont col-6 col-md-3">
-          <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-          <div class="overlay">
-            <div class="text">La chambre était magnifique, Jules LAFONT</div>
-          </div>
-        </div>
-        <div class="cont col-6 col-md-3">
-          <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-          <div class="overlay">
-            <div class="text">La chambre était magnifique, Jules LAFONT</div>
-          </div>
-        </div>
-        <div class="cont col-6 col-md-3">
-          <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-          <div class="overlay">
-            <div class="text">La chambre était magnifique, Jules LAFONT</div>
-          </div>
-        </div>
-        <div class="cont col-6 col-md-3">
-          <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis">
-          <div class="overlay">
-            <div class="text">La chambre était magnifique, Jules LAFONT</div>
+            </nav>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-
-      <div class="container bot">
-          <h1>Votre avis est important pour nous</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem quae aperiam dolorum vel fugiat! Esse similique architecto non aperiam eveniet deserunt id eius minus, quis possimus ullam enim expedita.</p>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 border-top border-bottom border-dark my-4 text-center bg-light calage">
+          <h1>Vos avis</h1>
+        </div>
+        <p class="text-justify mx-2 text-center">Dans le cadre de notre démarche qualité, nous accordons une grande
+          importance au recueil de la satisfaction de nos clients. Quelles soient positives ou négatives, toutes les
+          remarques sont importantes pour nous. Vous trouverez ci-joint les remarques de nos derniers clients. N'hésitez
+          pas à vous exprimer, d'avance merci.<br><cite>Le directeur</cite></p>
+        <hr>
+      </div>
+    </main>
+    <main class="container">
+      <div id="hotel">
+        <h3 class="border-top border-bottom border-dark my-4 text-center bg-light calage">Les avis sur notre hôtel</h3>
+        <div class="container bot">
+          <div class="imag1">
+            <div class="text2">Notre hôtel</div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center  marb-35">
+              <h2 class="header-h">Les derniers avis sur notre hôtel</h2>
+              <p class="header-p">Dans le cadre de notre démarche qualité, nous accordons une grande importance au
+                recueil
+                de la satisfaction de nos clients. Vous trouverez ci-joint les remarques de nos derniers clients.
+                N'hésitez pas à vous exprimer, d'avance merci. <cite>Le directeur</cite> </p>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="row justify-content-around">
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/homme1.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"L'équipe de l'hotel est incroyable"<cite><br>Jules LAFONT</cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="cont cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/homme2.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"J'ai hâte de revenir"
+                    <cite><br>Bruno Leblanc</cite></blockquote>
+                </div>
+              </div>
+              <div class="cont cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/homme5avis.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Une révolution dans le luxe"
+                    <cite><br>Leila HOUACIN</cite></blockquote>
+                </div>
+              </div>
+              <div class="cont cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/femme4avis.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Un week-end au paradis !!" <cite><br>Julie LAPORTE</cite></blockquote>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="col-3 offset-5">
+              <a href="#avis" class="btn boutonrecrutement">
+                Donner votre avis
+              </a>
+            </div>
+            <br>
+          </div>
         </div>
       </div>
-      
-      <div class="formulaireavis">
-        <form action="#" class="form-contact" method="post" tabindex="1" onsubmit="return verifForm(this)">
-          <input id="nom" type="text" class="form-contact-input" name="nome" placeholder="Nom" required onblur="verifnom(this)" />
-          <span id="erreur1"></span>
-          <input id="email" type="email" class="form-contact-input" name="email" placeholder="Email" required onblur="verifemail(this)" />
-          <span id="erreur2"></span>
-          <input id="tel" type="tel" class="form-contact-input" name="tel" placeholder="Numero de telephone" onblur="veriftel(this)" />
-          <span id="erreur3"></span>
-          <textarea id="text" class="form-contact-text" name="conteudo" placeholder="Votre avis sur notre hôtel? (le message doit comporter entre 20 et 300 caractéres)" required  onblur="veriftext(this)"></textarea>
-          <span id="erreur4"></span>
-          <select id="avis" class="form-contact-input" name="avis" onblur="verifavis(this)">
-            <option value="" >Recommandriez vous notre hôtel ? </option>
-              <option value="fr">Oui</option>
-              <option value="es">Non</option>
-              <option value="it">Sans avis</option>
-          </select>
-          <span id="erreur5"></span>
-          <button type="submit" class="form-contact-button" id ="inscription" onsubmit="return false">Envoyer</button>
+      <div id="chambre">
+        <h3 class="border-top border-bottom border-dark my-4 text-center bg-light calage">
+          Les avis sur nos chambres</h3>
+        <div class="container bot">
+          <div class="imag2">
+            <div class="text2">Nos chambres</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="header-h">Les derniers avis sur notre hôtel</h2>
+              <p class="header-p">Dans le cadre de notre démarche qualité, nous accordons une grande importance au
+                recueil
+                de la satisfaction de nos clients. Vous trouverez ci-joint les remarques de nos derniers clients.
+                N'hésitez pas à vous exprimer, d'avance merci. <cite>Le directeur</cite> </p>
+            </div>
+          </div>
+          <div class="container-fluid bot">
+            <div class="row justify-content-around">
+              <div class="cont col-6 col-md-3">
+                <img src="../img/avis/homme4avis.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"La chambre était magnifique"<cite><br>Julien LEROUX</cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/femmerestaurant.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"La suite est grandiose"
+                    <cite><br>Julie LABRUNE</cite></blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/femme3avis.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"J'ai hâte de revenir"
+                    <cite><br>Mélanie BLANC</cite></blockquote>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="col-3 offset-5">
+              <a href="#avis" class="btn boutonrecrutement">
+                Donner votre avis
+              </a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div id="restaurant">
+        <h3 class="border-top border-bottom border-dark my-4 text-center bg-light calage">Les avis sur notre restaurant
+        </h3>
+        <div class="container bot">
+          <div class="imag3">
+            <div class="text2">Notre restaurant</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="header-h">Les derniers avis sur notre hôtel</h2>
+              <p class="header-p">Dans le cadre de notre démarche qualité, nous accordons une grande importance au
+                recueil
+                de la satisfaction de nos clients. Vous trouverez ci-joint les remarques de nos derniers clients.
+                N'hésitez pas à vous exprimer, d'avance merci. <cite>Le directeur</cite> </p>
+            </div>
+          </div>
+          <div class="container-fluid bot">
+            <div class="row justify-content-around">
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/restaurant1.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Le décor est incroyable"<cite><br>Ilyas ARBAOUI</cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/restaurant2.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Les plats sont esquis !!"
+                    <cite><br>Sofiane ARBAOUI</cite></blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/restaurant3.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Un autre monde"
+                    <cite><br>Ines HOUACIN</cite></blockquote>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="col-3 offset-5">
+              <a href="#avis" class="btn boutonrecrutement">
+                Donner votre avis
+              </a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div id="spa">
+        <h3 class="border-top border-bottom border-dark my-4 text-center bg-light calage">Les avis sur notre Spa</h3>
+        <div class="container bot">
+          <div class="imag4">
+            <div class="text2">Notre Spa</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center  marb-35">
+              <h2 class="header-h">Les derniers avis sur notre hôtel</h2>
+              <p class="header-p">Dans le cadre de notre démarche qualité, nous accordons une grande importance au
+                recueil
+                de la satisfaction de nos clients. Vous trouverez ci-joint les remarques de nos derniers clients.
+                N'hésitez pas à vous exprimer, d'avance merci. <cite>Le directeur</cite> </p>
+            </div>
+          </div>
+          <div class="container-fluid bot">
+            <div class="row justify-content-around">
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/spa1.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Le Spa était magnifique"<cite><br>Cyrille PIEMOND</cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/spa2.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"Quelques heures au paradis"
+                    <cite><br>Angélique HAMONET</cite></blockquote>
+                </div>
+              </div>
+              <div class="cont col-12 col-md-6 col-lg-3">
+                <img src="../img/avis/spa4.jpg" alt="Avatar" class="imageavis2">
+                <div class="overlay">
+                  <blockquote class="text">"J'ai envie d'y retourner pour le Spa"
+                    <cite><br>Elise HUANG</cite></blockquote>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="col-3 offset-5">
+              <a href="#avis" class="btn boutonrecrutement">
+                Donner votre avis
+              </a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr class="separation">
+    </div>
+    <div class="container bot">
+      <h1>Votre avis est important pour nous</h1>
+      <p>Partagez votre avis sur l'hôtel de votre séjour et consultez ceux des autres voyageurs pour préparer vos
+        futures séjour.</p>
+    </div>
+    <hr class="separation">
+
+    <div class="container bloc">
+      <div class="row">
+        <h2 class="col-12">Formulaire d'avis</h2>
+        <p class="col-12">Merci d'avance de prendre le temps de compléter ce formulaire, nous reviendrons vers vous en
+          cas d'insatisfaction</p>
+        <form class="col-12 col" id="avis" action="get">
+          <label>Nom*</label>
+          <input type="text" name="nom" placeholder="Veuilez-nous indiquer votre nom"><br>
+          <label>Prenom*</label>
+          <input type="text" name="prenom" placeholder="Veuilez-nous indiquer votre prenom"><br>
+          <label>Votre pays*</label>
+          <input type="text" name="pays" placeholder="Veuilez-nous indiquer votre pays"><br>
+          <label>Votre enteprise*</label>
+          <input type="text" name="entreprise" placeholder="Veuilez-nous indiquer votre entreprise"><br>
+          <label>Telephone*</label>
+          <input type="text" class="form-control" name="telephone"
+            placeholder="Veuilez-nous indiquer votre Telephone"><br>
+          <label>Sujet*</label>
+          <input type="text" class="form-control" name="sujet" placeholder="Veuilez-nous indiquer votre sujet"><br>
+          <label>Email*</label>
+          <input type="email" name="email" class="email" placeholder="Veuilez-nous indiquer votre email"><br>
+          <label>Votre avis porte :</label>
+          <select class="form-control" name="objet" id="objet">
+            <option value='0' class="list-group-item list-group-item-action">--Saissisez une option--</option>
+            <option value='1'>Votre chambre</option>
+            <option value='2'>Le restaurant</option>
+            <option value='4'>Le Spa</option>
+            <option value='5'>L'hôtel en général</option>
+          </select><br>
+          <label>Message</label>
+          <textarea class="form-control" name="text" rows="10"></textarea>
+          <br>
+          <button type="submit" name="submit"> Valider </button>
         </form>
       </div>
-<script>
-      // valider le formulaire des avis
-      var formValid = document.getElementById('inscription');
-        var nom = document.getElementById('nom');
-        var email = document.getElementById('email');
-        var tel=document.getElementById('tel');
-        var text=document.getElementById('text');
-        var avis = document.getElementById('avis');
-        var error1 = document.getElementById("erreur1")
-        var error2 = document.getElementById("erreur2");
-        var error3 = document.getElementById("erreur3");
-        var error4 = document.getElementById("erreur4");
-        var error5 = document.getElementById("erreur5");
-      
-      // Mes styles par défaut
-        nom.style.border="1px red solid"
-        email.style.border="1px red solid"
-        tel.style.border="1px red solid"
-        text.style.border="1px red solid"
-        avis.border="1px red solid"
-      
-      
-       // formValid.addEventListener("submit", function (e){ e.preventDefault();});
-      
-       function verifavis(avis)
-{
-if (avis.value == "") {
-  error5.innerHTML = 'Vous devez indiquer votre niveau de satisfaction';
-    error5.style.color = 'black';
-    avis.style.color = 'black';
-    avis.style.border="1px red solid";
-    error5.style.border = '1px solid black';
-    error5.style.borderRadius = '5px';
-    error5.style.backgroundColor="grey"
-          }
-          else { error5.innerHTML = '';
-            avis.style.border="1px black solid";
-            return true;}
-        }
-      
-
-      
-      
-      function verifnom(nom)
-      {
-         if(nom.value.length <= 2 )
-         {
-        //  e.preventDefault();
-          error1.innerHTML = 'Un nom ne peut pas faire moins de 2 caractéres';
-          error1.style.color = 'black';
-          error1.style.border = '1px solid black';
-            error1.style.borderRadius = '5px';
-            error1.style.backgroundColor="grey"
-      
-          nom.style.color = 'black';
-          nom.style.border="1px red solid"
-          ;
-            return false;
-         }
-         else
-         {
-          error1.innerHTML = '';
-          error1.style.color = 'black';
-          nom.style.border="1px black solid";
-            return true;
-         }
-      }
-      
-      function verifemail(email)
-      {
-         if(email.value.length <= 2)
-         {
-          error2.innerHTML = 'Votre email n\'est pas correct';
-          error2.style.color = 'black';
-          error2.style.border = '1px solid black';
-          error2.style.borderRadius = '5px';
-          error2.style.backgroundColor="grey"
-          email.style.color = 'black';
-          email.style.border="1px red solid"
-            return false;
-         }
-         else
-         {
-          error2.innerHTML = '';
-          error2.style.color = '';
-          email.style.border="1px black solid"
-            return true;
-         }
-      }
-      
-      
-      function veriftel(tel)
-      {
-         var a = parseInt(tel.value);
-         if(isNaN(a) || a <= 5 || a >= 140)
-         {
-          error3.innerHTML = 'Le numéro de telephone doit etre au moins composé de 5 chiffres';
-          error3.style.color = 'black';
-          error3.style.border = '1px solid black';
-            error3.style.borderRadius = '5px';
-            error3.style.backgroundColor="grey"
-            return false;
-         }
-         else
-         {
-          error3.innerHTML = '';
-          error3.style.color = 'black';
-          tel.style.border="1px black solid";
-            return true;
-         }
-      }
-      
-      function veriftext(text)
-      {
-         var a = parseInt(text.value);
-         if(isNaN(a) || a <= 20 || a >= 300)
-         {
-          error4.innerHTML = 'Votre texte doit faire entre 20 et 300 caractères';
-          error4.style.color = 'black';
-          error4.style.border = '1px solid black';
-            error4.style.borderRadius = '5px';
-            error4.style.backgroundColor="grey"
-            return false;
-         }
-         else
-         {
-          error4.innerHTML = '';
-          error4.style.color = 'black';
-          text.style.border="1px black solid";
-            return true;
-         }
-      }
-      
-      function verifForm(e)
-      {
-         var avisOk = verifavis(e.radios);
-         var nomOk = verifnom(e.nom);
-         var telOk = veriftel(e.tel);
-         var textOk = veriftext(e.text);
-         var emailOk = verifemail(e.email);
-      
-         if(avisOk && nomOk && telOk && textOk && emailOk){
-         
-          alert("Votre Avis sera prise en compte");
-          return true;
-         }
-         else
-         {  
-            alert("Veuillez remplir correctement tous les champs");
-            return false;
-         }
-      }
-
-    </script>
-<!--Footer-->
-
-<footer class="container-fluid">
-    <div class="row">
-        <div class="col-12 col-md-4">
-            <h4>Menu</h4>
-            <div class="row">
-                <div class="col-md-5">
-                  <ul>
-                    <li><a href="chambres.html">Nos chambres</a></li>
-                    <li><a href="#">Nos Psa</a></li>
-                    <li><a href="restaurant.html">Nos restaurants</a></li>
-                    <li><a href="contact.html">Accès</a></li>
-                </ul>
-            </div>
-            <div class="col-md-5">
-                <ul class="list">
-                    <li><a href="hotel.html">Qui sommes-nous?</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-3">
-            <h4>Nous suivre</h4>
-            <ul>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-facebook-square" title="Facebook"></i>Facebook
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="#" rel="external nofollow">
-                        <i class="fab fa-twitter-square" title="Twitter"></i>Twitter
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-linkedin" title="Linkedin"></i>Linkedin
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" rel="external nofollow" href="#">
-                        <i class="fab fa-google-plus-square" title="Google+"></i>Google+
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-envelope-square" title="Envoyer par mail"></i>Nous écrire
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-5">
-            <h4>Newsletter</h4>
-            <form>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Saisisez votre mail" required>
-                <small id="emailHelp" class="form-text text-muted">Rejoignez-nous pour suivre notre actualité</small>
-                <button type="submit" class="btn btn-primary">Enregistrer</button>
-            </form>
-        </div>
     </div>
-</footer>
 
-<!-- JS -->
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-<script src="../js/script.js"></script>
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--Footer-->
 
-</body>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-4 bas">
+
+          <ul>
+            <li><a href="chambres.html">Nos chambres</a></li>
+            <li><a href="spa.html">Notre Psa</a></li>
+            <li><a href="restaurant.html">Notre restaurants</a></li>
+            <li><a href="accès.html">Accès</a></li>
+            <a href="JavaScript:window.print()">Imprimer</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 bas">
+          <ul class="list">
+            <li><a href="hotel.html">Qui sommes-nous?</a></li>
+            <li><a href="mentionslegales.html">Mentions légales</a></li>
+            <li><a href="plandusite.html">Plan du site</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="CGV.html">CGV</a></li>
+          </ul>
+
+        </div>
+
+
+        <div class="col-12 col-md-4 bas ">
+          <form action="#" method="post" id="newsletter" class="form-horizontal">
+            <div class="form-group row">
+              <div class="col-sm-12 col-md-6">
+                <input type="text" name="nom" placeholder="Votre nom et prénom" />
+                <span class="form_error"></span><br />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <input type="text" name="email" placeholder="Votre mail">
+                <span class="form_error"></span><br />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-12 col-md-12 pa">
+                <button type="submit" class="btn btn-primary">Rejoindre notre newsletter</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!--reseau en position fixed -->
+    <div class="reseau">
+      <ul class="im">
+        <li>
+          <a rel="external nofollow" href="https://www.facebook.com/">
+            <i class="fab fa-facebook-square ma-classe" title="Facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" rel="external nofollow">
+            <i class="fab fa-twitter-square ma-classe" title="Twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a rel="external nofollow" href="https://www.linkedin.fr/">
+            <i class="fab fa-linkedin ma-classe" title="Linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a rel="external nofollow" href="https://www.google+.com">
+            <i class="fab fa-google-plus-square ma-classe" title="Google+"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gmail.com">
+            <i class="fas fa-envelope-square ma-classe" title="Envoyer par mail"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--avis en position fixed -->
+    <div class="avis">
+      <ul class="im">
+        <li>
+          <a href="#hotel">
+            <i class="fas fa-hotel" title="Avis sur l'hôtel"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#chambre">
+            <i class="fas fa-hotel" title="Avis sur l'hôtel"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#restaurant">
+            <i class="fas fa-hotel" title="Avis sur l'hôtel"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#spa">
+            <i class="fas fa-hotel" title="Avis sur l'hôtel"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+
+  </body>
+
 </html>

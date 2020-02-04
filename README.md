@@ -1,2 +1,0 @@
-# Hotelcop
-Hotel-website
